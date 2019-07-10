@@ -11,6 +11,14 @@ const PORT = process.env.PORT || 3001;
 // Route requires
 const user = require('./routes/routes/user')
 
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static("client/build"));
+	app.get("*", (req, res) => {
+		res.sendFile(path.join(__dirname, "client/build", "index.html"))
+	})
+}
+
+
 // MIDDLEWARE
 app.use(morgan('dev'))
 app.use(
