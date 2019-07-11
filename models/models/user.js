@@ -15,8 +15,22 @@ const userSchema = new Schema({
 	// mobile: {type: String, unique: true, required: true},
 	// phone: {type: String, unique: true, required},
 	// role: {type: Number, unique: true, required: true},
-	// fkAngel: {type: Array,unique: true, required: true},
+	// fkCareT: {type: Array,unique: true, required: true},
 	// fkAide: {type: Array,unique: Boolean, required: Boolean}
+	// jointW: {type: Number, required: true},
+	// muscW: {type: Number, required: true},
+	// oPainWt: {type: Number, required: true},
+	// appetiteW: {type: Number, required: true},
+	// energyW: {type: Number, required: true},
+	// sleepW:{type: Number, required: true},
+	// fatigueW: {type: Number, required: true},
+	// mobW: {type: Number, required: true},
+	// balW: {type: Number, required: true},
+	// breathW:{type: Number, required: true},
+	// calmW:{type: Number, required: true},
+	// tModW: {type: Number, required: true},
+	// bowelsW: {type: Number, required: true},
+	// giW: {type: Number, required: true}
 
 })
 
