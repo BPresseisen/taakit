@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
 // import Github from '../assets/images/github.png';
 
 
@@ -16,9 +18,26 @@ class Footer extends Component {
                 <div className="col l4 offset-l2 s12">
                   <h5 className="white-text">Links</h5>
                   <ul>
-                    <li><a className="grey-text text-lighten-3" href="#!">About</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Contact</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Team</a></li>
+                  <li>
+                      <Link to="/account">
+                      <div className="grey-text text-lighten-3">My Account</div>
+                      </Link>
+                      </li>
+                    <li>
+                      <Link to="/about">
+                      <div className="grey-text text-lighten-3">About</div>
+                      </Link>
+                      </li>
+                    <li>
+                    <Link to="/contact">
+                      <div className="grey-text text-lighten-3">Contact</div>
+                      </Link>
+                      </li>
+                    <li>
+                      <Link to="/team">
+                      <div className="grey-text text-lighten-3">Privacy Policy</div>
+                      </Link>
+                      </li>
                   </ul>
                 </div>
               </div>

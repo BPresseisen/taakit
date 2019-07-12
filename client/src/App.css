@@ -1,27 +1,74 @@
-.App {
-  text-align: center;
-}
 
-
-.App-header {
-  background-color: #282c34;
+body {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+main {
+  flex: 1 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family:"proxima-nova-black";
+  src:url("https://use.typekit.net/af/55bd39/00000000000000003b9b093f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/55bd39/00000000000000003b9b093f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/55bd39/00000000000000003b9b093f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+  font-style:normal;font-weight:900;
   }
-  to {
-    transform: rotate(360deg);
+  @font-face {
+  font-family:"proxima-nova";
+  src:url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style:normal;font-weight:700;
+  }
+  @font-face {
+  font-family:"proxima-nova-light";
+  src:url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style:normal;font-weight:400;
+  }
+
+  .brand-logo {
+    font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+    font-size: 50px !important;
+    margin-left: 25px;
+  }         
+#signupForm, #profileForm, #signinForm, #roleForm {
+  justify-content: center;
+  padding: 30px;
+}
+
+.formTitle {
+  color: #555555;
+  font-size: 25px;
+  line-height: 25px;
+  font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+}
+
+.navText {
+  color:white !important;
+  font-size: 20px !important;
+  line-height: 20px;
+  font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+}
+
+.githublogo {
+  width: 25px;
+  top: 8px;
+  position: relative;
+}
+
+a:hover {
+  color: ffffff; 
+}
+
+@media only screen and (max-width: 990px) {
+  .brand-logo {
+    margin: 0 !important;
+  }    
+}
+
+@media only screen and (max-width: 600px) {
+  #signupForm, #profileForm, #signinForm {
+    margin-top:50px;
+    padding: 10px !important;
   }
 }

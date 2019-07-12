@@ -1,11 +1,19 @@
-import React, { Component } from 'react'
-// import { Redirect } from 'react-router-dom'
-// import { Route, Link } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import '../App.css';
-import axios from 'axios'
+import React, { Component } from "react";
+import M from "materialize-css/dist/js/materialize.min.js";
+import "materialize-css/dist/css/materialize.min.css";
+import { NavLink } from "react-router-dom";
+import axios from 'axios';
+
 
 class Navbar extends Component {
+    componentDidMount() {
+        var elem = document.querySelector(".sidenav");
+        var instance = M.Sidenav.init(elem, {
+            edge: "left",
+            inDuration: 250
+        });
+    }
+
     constructor() {
         super()
         this.logout = this.logout.bind(this)
@@ -31,39 +39,65 @@ class Navbar extends Component {
         const loggedIn = this.props.loggedIn;
         console.log('navbar render, props: ')
         console.log(this.props);
-        
         return (
-            <div>
-
-                <header className="navbar App-header" id="nav-container">
-                    <div className="col-4" >
-                        {loggedIn ? (
-                            <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
-                                <span className="text-secondary">logout</span></Link>
-
-                            </section>
-                        ) : (
-                                <section className="navbar-section">
-                                    <Link to="/" className="btn btn-link text-secondary">
-                                        <span className="text-secondary">home</span>
-                                        </Link>
-                                    <Link to="/login" className="btn btn-link text-secondary">
-                                    <span className="text-secondary">login</span>
-				</Link>
-                                    <Link to="/signup" className="btn btn-link">
-                                    <span className="text-secondary">sign up</span>
-				</Link>
-                                </section>
-                            )}
+            <div className="navbar-fixed">
+                  <nav>
+                    <div className="nav-wrapper">
+                        <NavLink to="/">
+                        <a className="brand-logo">Taakit</a>
+                        </NavLink>
+                    <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                    <ul className="right hide-on-med-and-down">
+                    {loggedIn ? (
+                        <li>
+                        <NavLink to="/signup" onClick={this.logout}>
+                            <a>Logout</a>
+                        </NavLink>
+                        </li>
+                          ) : (
+                              <div>
+                        <li>
+                            <NavLink to="/signin">
+                                <a>Sign-in</a>
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink to="/signup">
+                            <a>Sign-up</a> 
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink to="/profile">
+                            <a >Profile</a>
+                            </NavLink>
+                        </li>
+                        </div>
+                         )}
+                    </ul>
                     </div>
-                   
-                </header>
+                </nav>
+
+                <ul className="sidenav red lighten-2" id="mobile-demo">
+                <NavLink to="/signin">
+                    <li><a className="navText">Sign-in</a></li>
+                </NavLink>
+                <NavLink to="/signup">
+                <li><a  className="navText">Sign-up</a></li>
+                </NavLink>
+                <NavLink to="/role"> 
+                    <li><a className="navText">Role</a></li>
+                    </NavLink>
+                <NavLink to="/profile"> 
+                    <li><a  className="navText">Profile</a></li>
+                    </NavLink>
+                    <NavLink to="/patientProfile"> 
+                    <li><a className="navText">Patient Profile</a></li>
+                    </NavLink>
+                </ul>
+          
             </div>
-
         );
-
     }
 }
 
-export default Navbar
+export default Navbar;
