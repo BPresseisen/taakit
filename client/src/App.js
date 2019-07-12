@@ -8,6 +8,7 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
+import Footer from './components/footer';
 
 class App extends Component {
   constructor() {
@@ -76,7 +77,7 @@ class App extends Component {
           render={() =>
             <Signup/>}
         />
-
+  <Footer/>
       </div>
     );
   }

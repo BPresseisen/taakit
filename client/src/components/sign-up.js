@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios'
 
+
 class Signup extends Component {
-	constructor() {
+  constructor() {
 		super()
 		this.state = {
 			username: '',
@@ -44,55 +46,58 @@ class Signup extends Component {
 
 			})
 	}
+      
+    render() {
+        return (
+            <div className="container">
+                
+  <div className="row">
+    <form className="col s12" id="signupForm">
+    <div className="row ">
+        <div className="col s12 center formTitle">
+           Sign up for Taakit
+        </div>
+        </div>
+      <div className="row">
+      <div className="input-field col s12 l6 offset-l3">
+          <input className="validate"
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          value={this.state.username}
+          onChange={this.handleChange}/>
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div className="row">
+        <div className="input-field col s12 l6 offset-l3">
+          <input className="validate"
+          placeholder="password"
+          type="password"
+          name="password"
+          value={this.state.password}
+          onChange={this.handleChange}/>
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div className="row">
+            <div className="col s12 l6 offset-l3">
+              <Link to="/role">
+              <button class="btn waves-effect waves-light" type="submit" name="action"
+              onClick={this.handleSubmit}
+              >Sign Up
+                <i class="material-icons right">send</i>
+            </button>
+              </Link>
+            </div>
+      </div>
+ 
 
-
-render() {
-	return (
-		<div className="SignupForm">
-			<h4>Sign up</h4>
-			<form className="form-horizontal">
-				<div className="form-group">
-					<div className="col-1 col-ml-auto">
-						<label className="form-label" htmlFor="username">Username</label>
-					</div>
-					<div className="col-3 col-mr-auto">
-						<input className="form-input"
-							type="text"
-							id="username"
-							name="username"
-							placeholder="Username"
-							value={this.state.username}
-							onChange={this.handleChange}
-						/>
-					</div>
-				</div>
-				<div className="form-group">
-					<div className="col-1 col-ml-auto">
-						<label className="form-label" htmlFor="password">Password: </label>
-					</div>
-					<div className="col-3 col-mr-auto">
-						<input className="form-input"
-							placeholder="password"
-							type="password"
-							name="password"
-							value={this.state.password}
-							onChange={this.handleChange}
-						/>
-					</div>
-				</div>
-				<div className="form-group ">
-					<div className="col-7"></div>
-					<button
-						className="btn btn-primary col-1 col-mr-auto"
-						onClick={this.handleSubmit}
-						type="submit"
-					>Sign up</button>
-				</div>
-			</form>
-		</div>
-
-	)
+    </form>
+  </div>
+            </div>
+        )
+    }
 }
-}
-
 export default Signup
