@@ -68,8 +68,8 @@ class App extends Component {
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
-          <Route path="/tasks" render={() => <TasksPage/>}/>
-          <Route path="/shift" render={() => <ShiftPage/>}/>
+          <Route path="/tasks" component={TasksPage}/>
+          <Route path="/shift" component={ShiftPage}/>
         <Footer/>
       </div>
     );
