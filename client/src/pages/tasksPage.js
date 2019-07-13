@@ -4,13 +4,14 @@ import {
     Feeding,
     FoodPrep,
     Medication,
-    Bathroom,
+    Toileting,
     Bathing,
+    Laundry,
     Dressing,
-    PhysicalAssistance,
+    Mobility,
     Transportation,
     Shopping,
-    MediaAssistance,
+    MediaTech,
     Housekeeping
 } from "../components/Tasks";
 
@@ -33,14 +34,15 @@ class TasksPage extends Component {
                             <FoodPrep/>
                             <Feeding/>
                             <Medication/>
-                            <Bathroom/>
+                            <Toileting/>
                             <Bathing/>
+                            <Laundry/>
                             <Dressing/>
                             <Housekeeping/>
-                            <PhysicalAssistance/>
+                            <Mobility/>
                             <Transportation/>
                             <Shopping/>
-                            <MediaAssistance/>
+                            <MediaTech/>
                         </TaskContainer>
                     </div>
                 </div>

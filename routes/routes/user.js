@@ -10,7 +10,7 @@ router.post('/', (req, res) => {
     // ADD VALIDATION
     User.findOne({ username: username }, (err, user) => {
         if (err) {
-            console.log('User.js post error: ', err)
+            console.log('user.js post error: ', err)
         } else if (user) {
             res.json({
                 error: `Sorry, already a user with the username: ${username}`
@@ -47,7 +47,7 @@ router.post(
 )
 
 router.get('/', (req, res, next) => {
-    console.log('===== user!!======')
+    console.log('===== patient!!======')
     console.log(req.user)
     if (req.user) {
         res.json({ user: req.user })
@@ -61,7 +61,7 @@ router.post('/logout', (req, res) => {
         req.logout()
         res.send({ msg: 'logging out' })
     } else {
-        res.send({ msg: 'no user to log out' })
+        res.send({ msg: 'no patient to log out' })
     }
 })
 
