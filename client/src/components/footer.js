@@ -40,6 +40,11 @@ class Footer extends Component {
                       </Link>
                       </li>
                       <li>
+                      <Link to="/vitals">
+                      <div className="grey-text text-lighten-3">Vitals</div>
+                      </Link>
+                      </li>
+                      <li>
                       <Link to="/shift">
                       <div className="grey-text text-lighten-3">Shifts</div>
                       </Link>

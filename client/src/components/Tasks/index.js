@@ -73,10 +73,10 @@ export function TaskExpand(props) {
             <form action="#">
             <Input type="hidden" name="TaskType" value={props.timeStamp}/>
             <Input type="hidden" name="ShiftID" value={props.shiftID}/>
-            <Input type="hidden" name="ShiftID" value={props.userID}/>
+            <Input type="hidden" name="UserID" value={props.userID}/>
             <Input type="hidden" name="TaskType" value={props.taskTypeID}/>
-            <Input type="hidden" name="ShiftID" value={props.score}/>
-            <Input type="hidden" name="ShiftID" value={props.note}/>
+            <Input type="hidden" name="TaskScore" value={props.score}/>
+            <Input type="hidden" name="ShiftNote" value={props.note}/>
             <div>
                 {props.children}
             </div>
