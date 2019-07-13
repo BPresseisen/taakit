@@ -1,0 +1,20 @@
+
+
+.task-title * {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.task-id {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    float: right;
+    justify-content: flex-end;
+    font-weight: normal;
+    color: #555555;
+    width: 50%;
+}
+

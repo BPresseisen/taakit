@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import Github from '../assets/images/github.png';
 
 // import Github from '../assets/images/github.png';
 
@@ -16,11 +17,31 @@ class Footer extends Component {
 </p>
                 </div>
                 <div className="col l4 offset-l2 s12">
-                  <h5 className="white-text">Links</h5>
+                  <h5 className="white-text">Site Map</h5>
                   <ul>
                   <li>
-                      <Link to="/account">
-                      <div className="grey-text text-lighten-3">My Account</div>
+                      <Link to="/">
+                      <div className="grey-text text-lighten-3">Home</div>
+                      </Link>
+                      </li>
+                      <li>
+                      <Link to="/login">
+                      <div className="grey-text text-lighten-3">Login</div>
+                      </Link>
+                      </li>
+                      <li>
+                      <Link to="/signup">
+                      <div className="grey-text text-lighten-3">Signup</div>
+                      </Link>
+                      </li>
+                      <li>
+                      <Link to="/tasks">
+                      <div className="grey-text text-lighten-3">Tasks</div>
+                      </Link>
+                      </li>
+                      <li>
+                      <Link to="/shift">
+                      <div className="grey-text text-lighten-3">Shifts</div>
                       </Link>
                       </li>
                     <li>
@@ -33,11 +54,7 @@ class Footer extends Component {
                       <div className="grey-text text-lighten-3">Contact</div>
                       </Link>
                       </li>
-                    <li>
-                      <Link to="/team">
-                      <div className="grey-text text-lighten-3">Privacy Policy</div>
-                      </Link>
-                      </li>
+                      
                   </ul>
                 </div>
               </div>
@@ -45,7 +62,8 @@ class Footer extends Component {
             <div className="footer-copyright">
               <div className="container">
               © 2019 Copyright
-        
+              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank">Github Repo <img src={Github} alt="Github" className="githublogo"/></a>
+
               </div>
             </div>
           </footer>            

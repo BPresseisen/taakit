@@ -7,11 +7,7 @@ import axios from 'axios';
 
 class Navbar extends Component {
     componentDidMount() {
-        var elem = document.querySelector(".sidenav");
-        var instance = M.Sidenav.init(elem, {
-            edge: "left",
-            inDuration: 250
-        });
+        M.AutoInit();
     }
 
     constructor() {
@@ -40,35 +36,35 @@ class Navbar extends Component {
         console.log('navbar render, props: ')
         console.log(this.props);
         return (
-            <div className="navbar-fixed">
+            <div className="navbar-fixed ">
                   <nav>
                     <div className="nav-wrapper">
                         <NavLink to="/">
-                        <a className="brand-logo">Taakit</a>
+                        <a href="#!" className="brand-logo">Taakit</a>
                         </NavLink>
-                    <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
                     {loggedIn ? (
                         <li>
                         <NavLink to="/signup" onClick={this.logout}>
-                            <a>Logout</a>
+                            <a href="#!">Logout</a>
                         </NavLink>
                         </li>
                           ) : (
                               <div>
                         <li>
                             <NavLink to="/signin">
-                                <a>Sign-in</a>
+                                <a href="#!">Sign-in</a>
                             </NavLink>
                         </li>
                         <li> 
                             <NavLink to="/signup">
-                            <a>Sign-up</a> 
+                            <a href="#!">Sign-up</a> 
                             </NavLink>
                         </li>
                         <li> 
                             <NavLink to="/profile">
-                            <a >Profile</a>
+                            <a href="#!">My Account</a>
                             </NavLink>
                         </li>
                         </div>
@@ -79,19 +75,19 @@ class Navbar extends Component {
 
                 <ul className="sidenav red lighten-2" id="mobile-demo">
                 <NavLink to="/signin">
-                    <li><a className="navText">Sign-in</a></li>
+                    <li><a href="#!" className="navText">Sign-in</a></li>
                 </NavLink>
                 <NavLink to="/signup">
-                <li><a  className="navText">Sign-up</a></li>
+                <li><a href="#!"  className="navText">Sign-up</a></li>
                 </NavLink>
                 <NavLink to="/role"> 
-                    <li><a className="navText">Role</a></li>
+                    <li><a href="#!" className="navText">Role</a></li>
                     </NavLink>
                 <NavLink to="/profile"> 
-                    <li><a  className="navText">Profile</a></li>
+                    <li><a href="#!" className="navText">Profile</a></li>
                     </NavLink>
                     <NavLink to="/patientProfile"> 
-                    <li><a className="navText">Patient Profile</a></li>
+                    <li><a href="#!" className="navText">Patient Profile</a></li>
                     </NavLink>
                 </ul>
           
