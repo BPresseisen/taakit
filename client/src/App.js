@@ -12,6 +12,7 @@ import Footer from './components/footer';
 import LoggedIn from './components/loggedIn';
 import HomePage from './pages/homePage';
 import TasksPage from './pages/tasksPage';
+import VitalsPage from './pages/vitalsPage';
 import ShiftPage from './pages/shiftPage';
 
 
@@ -69,6 +70,7 @@ class App extends Component {
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
           <Route path="/tasks" component={TasksPage}/>
+          <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>
         <Footer/>
       </div>
