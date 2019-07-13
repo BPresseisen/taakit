@@ -102,7 +102,7 @@ export function InfoIcon() {
 export function FoodPrep() {
     return (
         <Li>
-        <TaskTitle task="Food Preparation"/>
+        <TaskTitle task="Food preparation"/>
         <TaskExpand description="Helping prepare meals.">
             <TaskRating>
                 <Selection assistanceRating="Plans, prepares and serves adequate meals independently" score="1"/>
@@ -144,14 +144,14 @@ export function Medication() {
     );
 }
 
-export function Bathroom() {
+export function Toileting() {
     return (
         <Li>
-        <TaskTitle task="Bathroom"/>
+        <TaskTitle task="Toileting"/>
         <TaskExpand description="Helping the patient with toileting.">
             <TaskRating>
                 <Selection assistanceRating="Goes to toilet, gets on and off, arranges clothes, cleans genital area without help." score="1"/>
-                <Selection assistanceRating="Need help with bathing more than one part of the body, getting in or out of the tub or shower. Requires total bathing " score="2"/>
+                <Selection assistanceRating="Needs help transferring to the toilet, cleaning self or uses bedpan or commode." score="2"/>
             </TaskRating>
         </TaskExpand>     
         </Li>
@@ -166,6 +166,21 @@ export function Bathing() {
             <TaskRating>
                 <Selection assistanceRating="Bathes self completely or needs help in bathing only a single part of the body such as the back, genital area or disabled extremity" score="1"/>
                 <Selection assistanceRating="Need help with bathing more than one part of the body, getting in or out of the tub or shower. Requires total bathing " score="2"/>
+            </TaskRating>
+        </TaskExpand>     
+        </Li>
+    );
+}
+
+export function Laundry() {
+    return (
+        <Li>
+        <TaskTitle task="Laundry"/>
+        <TaskExpand description="Helping the patient with their laundry.">
+            <TaskRating>
+                <Selection assistanceRating="Does personal laundry completely." score="1"/>
+                <Selection assistanceRating="Launders small items-rinses stockings, etc." score="2"/>
+                <Selection assistanceRating="All laundry must be done by others." score="3"/>
             </TaskRating>
         </TaskExpand>     
         </Li>
@@ -203,10 +218,10 @@ export function Housekeeping() {
     );
 }
 
-export function PhysicalAssistance() {
+export function Mobility() {
     return (
         <Li>
-        <TaskTitle task="Physical Assistance"/>
+        <TaskTitle task="Mobility"/>
         <TaskExpand description="Helping the patient with their mobility around the house or other areas.">
             <TaskRating>
                 <Selection assistanceRating="Moves in and out of bed or chair unassisted. Mechanical transfer aids are acceptable " score="1"/>
@@ -250,15 +265,15 @@ export function Shopping() {
     );
 }
 
-export function MediaAssistance() {
+export function MediaTech() {
     return (
         <Li>
-        <TaskTitle task="Media Device Assistance"/>
-        <TaskExpand description="Helping with media devices such as TV, laptop, tablet, cellphone, etc.  ">
+        <TaskTitle task="Media technology"/>
+        <TaskExpand description="Helping with technology media devices such as TV, laptop, tablet, mobile phone, etc.">
             <TaskRating>
-                <Selection assistanceRating="TOperates media devices on own initiative" score="1"/>
-                <Selection assistanceRating="Operates media devices but not with as much independence as before" score="2"/>
-                <Selection assistanceRating="Only uses media devices when encouraged by others" score="3"/>
+                <Selection assistanceRating="Operates media devices on own initiative" score="1"/>
+                <Selection assistanceRating="Operates media devices but not with as much independence" score="2"/>
+                <Selection assistanceRating="Only uses media devices when encouraged and helped by others" score="3"/>
                 <Selection assistanceRating="Does not use media devices at all" score="4"/>
             </TaskRating>
         </TaskExpand>     
