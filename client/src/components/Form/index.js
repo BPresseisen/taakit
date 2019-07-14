@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
+import "materialize-css/dist/css/materialize.min.css";
 
 export function Input(props) {
     return (
@@ -25,3 +26,6 @@ export function Input(props) {
     );
   }
 
+
+
+  

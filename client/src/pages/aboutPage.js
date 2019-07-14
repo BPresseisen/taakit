@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { UIButton } from  '../components/Form';
 
 class About extends Component {
     render() {
@@ -6,6 +7,7 @@ class About extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col s12">
+                    
                         Welcome to Taakit, a solution for the future of in home assisted care. <br/>
                         <br/>
                         Why we created Taakit?<br/>

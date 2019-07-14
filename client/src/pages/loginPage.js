@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
+import { Redirect } from 'react-router-dom';
+import "materialize-css/dist/css/materialize.min.css";
+import axios from 'axios';
 
 
 class LoginForm extends Component {
+ 
   constructor() {
     super()
     this.state = {
@@ -52,6 +54,8 @@ handleSubmit(event) {
             
         })
 }
+
+
 
 render() {
   if (this.state.redirectTo) {
