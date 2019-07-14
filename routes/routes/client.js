@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const User = require('../../models/models/user')
-const passport = require('../passport')
+const User = require('../../models/models/client')
+//const passport = require('../passport')
 
 router.post('/', (req, res) => {
-    console.log('user signup');
+    console.log('caregiver entry');
 
     const { username, password } = req.body
     // ADD VALIDATION
@@ -30,9 +30,9 @@ router.post('/', (req, res) => {
 })
 
 router.post(
-    '/login',
+    '/client',
     function (req, res, next) {
-        console.log('routes/user.js, login, req.body: ');
+        console.log('routes/client.js, login, req.body: ');
         console.log(req.body)
         next()
     },
@@ -42,12 +42,12 @@ router.post(
         var userInfo = {
             username: req.user.username
         };
-        res.send(userInfo);
+        res.send(clientInfo);
     }
 )
 
 router.get('/', (req, res, next) => {
-    console.log('===== user!!======')
+    console.log('===== patient!!======')
     console.log(req.user)
     if (req.user) {
         res.json({ user: req.user })

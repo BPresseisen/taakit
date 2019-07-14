@@ -138,7 +138,7 @@ export function InfoIcon() {
 export function JointPain() {
     return (
         <Li>
-        <VitalTitle task="Joint Pain"/>
+        <VitalTitle task="Joint Pain - PAIN GROUP"/>
         <VitalExpand description="Pain originating from the physical point of connection between two bones.">
             <VitalRating>
                 <Selection assistanceRating="Pain is greater since prior  assessment." score="1"/>
@@ -152,7 +152,7 @@ export function JointPain() {
 export function MusclePain() {
     return (
         <Li>
-        <VitalTitle task="Muscular Pain"/>
+        <VitalTitle task="Muscular Pain - PAIN GROUP"/>
         <VitalExpand description="Pain originating from the muscles.">
             <VitalRating>
                 <Selection assistanceRating="Pain is greater since prior assessment." score="1"/>
@@ -166,7 +166,7 @@ export function MusclePain() {
 export function NervePain() {
     return (
         <Li>
-        <VitalTitle task="Neuropathic Pain"/>
+        <VitalTitle task="Neuropathic Pain - PAIN GROUP"/>
         <VitalExpand description="Pain originating from nerve impingement.">
             <VitalRating>
                 <Selection assistanceRating="Pain is greater since prior assessment." score="1"/>
@@ -180,7 +180,7 @@ export function NervePain() {
 export function GastroPain() {
     return (
         <Li>
-        <VitalTitle task="Gastrointestinal Pain"/>
+        <VitalTitle task="Gastrointestinal Pain - PAIN GROUP"/>
         <VitalExpand description="Pain originating from stomach and intestines.">
             <VitalRating>
                 <Selection assistanceRating="Pain is greater since prior assessment." score="1"/>
@@ -194,7 +194,7 @@ export function GastroPain() {
 export function Appetite() {
     return (
         <Li>
-        <VitalTitle task="Appetite"/>
+        <VitalTitle task="Appetite - ENGINE GROUP"/>
         <VitalExpand description="General appetite level">
             <VitalRating>
                 <Selection assistanceRating="Cliet exhbibits reduced appetite since prior assessment." score="1"/>
@@ -205,38 +205,10 @@ export function Appetite() {
         </Li>
     );
 }
-export function BodyTemp() {
-    return (
-        <Li>
-        <VitalTitle task="Body Temperature"/>
-        <VitalExpand description="Overall Body Temperature">
-            <VitalRating>
-                <Selection assistanceRating="Client describes lower body temperature since prior assessment." score="1"/>
-                <Selection assistanceRating="Client describes unchanged body temperature since prior assessment." score="2"/>
-                <Selection assistanceRating="Client describes higher body temperature since prior assessment. appetite since prior asssessment." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Vigor() {
-    return (
-        <Li>
-        <VitalTitle task="Vigor"/>
-        <VitalExpand description="Effort, energy, and enthusiasm.">
-            <VitalRating>
-                <Selection assistanceRating="Client generally exhibits decreased vigor." score="1"/>
-                <Selection assistanceRating="Client generally exhibits unchanged vigor levels." score="2"/>
-                <Selection assistanceRating="Client generally increased vigor." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
 export function SleepQual() {
     return (
         <Li>
-        <VitalTitle task="Sleep Quality"/>
+        <VitalTitle task="Sleep Quality - ENGINE GROUP"/>
         <VitalExpand description="One's satisfaction of the sleep experience, integrating aspects of sleep initiation, sleep maintenance, sleep quantity, and refreshment upon awakening.">
             <VitalRating>
                 <Selection assistanceRating="Client describes lower sleep quality." score="1"/>
@@ -250,7 +222,7 @@ export function SleepQual() {
 export function Fatigue() {
     return (
         <Li>
-        <VitalTitle task="Fatigue"/>
+        <VitalTitle task="Fatigue - ENGINE GROUP"/>
         <VitalExpand description="Extreme tiredness resulting from mental or physical exertion or illness.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits higher fatigue behaviors." score="1"/>
@@ -261,29 +233,15 @@ export function Fatigue() {
         </Li>
     );
 }
-export function Mobility() {
+export function BodyTemp() {
     return (
         <Li>
-        <VitalTitle task="Mobility"/>
-        <VitalExpand description="The ability to move or be moved freely and easily.">
+        <VitalTitle task="Body Temperature - ENGINE GROUP"/>
+        <VitalExpand description="Overall Body Temperature">
             <VitalRating>
-                <Selection assistanceRating="Client exhibits decreased mobility." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged mobility." score="2"/>
-                <Selection assistanceRating="Client exhibits increased mobility." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Balance() {
-    return (
-        <Li>
-        <VitalTitle task="Balance"/>
-        <VitalExpand description="An even distribution of weight enabling someone or something to remain upright and steady.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits decreased balance." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged balance." score="2"/>
-                <Selection assistanceRating="Client exhibits increased balance." score="3"/>
+                <Selection assistanceRating="Client describes lower body temperature since prior assessment." score="1"/>
+                <Selection assistanceRating="Client describes unchanged body temperature since prior assessment." score="2"/>
+                <Selection assistanceRating="Client describes higher body temperature since prior assessment. appetite since prior asssessment." score="3"/>
             </VitalRating>
         </VitalExpand>     
         </Li>
@@ -292,7 +250,7 @@ export function Balance() {
 export function ShortBreath() {
     return (
         <Li>
-        <VitalTitle task="Breath Control"/>
+        <VitalTitle task="Breath Control - ENGINE GROUP"/>
         <VitalExpand description="Difficulty in breathing or strained, labored effort to breathe.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits increased shortness of breath." score="1"/>
@@ -303,122 +261,10 @@ export function ShortBreath() {
         </Li>
     );
 }
-export function Moodiness() {
-    return (
-        <Li>
-        <VitalTitle task="Moodiness"/>
-        <VitalExpand description="The constantly changing states of being contented one moment, then sad the next, then angry, then joyous and then irritable.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased moodiness." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged moodiness." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased moodiness." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Calmness() {
-    return (
-        <Li>
-        <VitalTitle task="Calmness"/>
-        <VitalExpand description="The state or quality of being free from agitation, disturbance or strong emotion.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased calmness." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged calmness." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased calmness." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Loqquacity() {
-    return (
-        <Li>
-        <VitalTitle task="Loquacity"/>
-        <VitalExpand description="The quality of talking a great deal; talkativeness.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased nervousness." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged nervousness." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased nervousness." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Restlessness() {
-    return (
-        <Li>
-        <VitalTitle task="Restlessness"/>
-        <VitalExpand description="The inability to rest or relax as a result of anxiety or boredom.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased restlessness." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged restlessness." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased restlessness." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Impatience() {
-    return (
-        <Li>
-        <VitalTitle task="Impatience"/>
-        <VitalExpand description="The tendency to be impatient; irritability or restlessness.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased impatience." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged impatience." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased impatience." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Hypermotility() {
-    return (
-        <Li>
-        <VitalTitle task="Hypermotility"/>
-        <VitalExpand description="Abnormal or excessive movement in the bowels">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased hypermotility." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged hypermotility." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased hypermotility." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Continence() {
-    return (
-        <Li>
-        <VitalTitle task="Continence"/>
-        <VitalExpand description="The ability to control movements of the bowels and bladder.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits decreased continence." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged continence." score="2"/>
-                <Selection assistanceRating="Client exhibits increased continence." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
-export function Constipation() {
-    return (
-        <Li>
-        <VitalTitle task="Constipation"/>
-        <VitalExpand description="Infrequent bowel movements, and small, hard-to-pass, stool.">
-            <VitalRating>
-                <Selection assistanceRating="Client exhibits increased constipation." score="1"/>
-                <Selection assistanceRating="Client exhibits unchanged constipation." score="2"/>
-                <Selection assistanceRating="Client exhibits decreased constipation." score="3"/>
-            </VitalRating>
-        </VitalExpand>     
-        </Li>
-    );
-}
 export function Hypertonicity() {
     return (
         <Li>
-        <VitalTitle task="Hypertonicity"/>
+        <VitalTitle task="Hypertonicity -  STEADY GROUP"/>
         <VitalExpand description="Spastic dystonia is a continual increase in the muscle tension compared to normal resting tension, regardless of movement.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits increased hypertonicity." score="1"/>
@@ -432,7 +278,7 @@ export function Hypertonicity() {
 export function Jitteriness() {
     return (
         <Li>
-        <VitalTitle task="Jitteriness"/>
+        <VitalTitle task="Jitteriness - STEADY GROUP"/>
         <VitalExpand description="Any involuntary movement; Hallmark of a tremor.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits increased jitteriness." score="1"/>
@@ -446,12 +292,166 @@ export function Jitteriness() {
 export function Socialization() {
     return (
         <Li>
-        <VitalTitle task="Socialization"/>
+        <VitalTitle task="Socialization - STEADY GROUP"/>
         <VitalExpand description="Likelihood and tendency to socialize with others.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits decreased socialization." score="1"/>
                 <Selection assistanceRating="Client exhibits unchanged socialization." score="2"/>
                 <Selection assistanceRating="Client exhibits increased socialization." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Mobility() {
+    return (
+        <Li>
+        <VitalTitle task="Mobility - STEADY GROUP"/>
+        <VitalExpand description="The ability to move or be moved freely and easily.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits decreased mobility." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged mobility." score="2"/>
+                <Selection assistanceRating="Client exhibits increased mobility." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Balance() {
+    return (
+        <Li>
+        <VitalTitle task="Balance - STEADY GROUP"/>
+        <VitalExpand description="An even distribution of weight enabling someone or something to remain upright and steady.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits decreased balance." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged balance." score="2"/>
+                <Selection assistanceRating="Client exhibits increased balance." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Vigor() {
+    return (
+        <Li>
+        <VitalTitle task="Vigor - SENTIMENT GROUP"/>
+        <VitalExpand description="Effort, energy, and enthusiasm.">
+            <VitalRating>
+                <Selection assistanceRating="Client generally exhibits decreased vigor." score="1"/>
+                <Selection assistanceRating="Client generally exhibits unchanged vigor levels." score="2"/>
+                <Selection assistanceRating="Client generally increased vigor." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Moodiness() {
+    return (
+        <Li>
+        <VitalTitle task="Moodiness - SENTIMENT GROUP"/>
+        <VitalExpand description="The constantly changing states of being contented one moment, then sad the next, then angry, then joyous and then irritable.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased moodiness." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged moodiness." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased moodiness." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Calmness() {
+    return (
+        <Li>
+        <VitalTitle task="Calmness - SENTIMENT GROUP"/>
+        <VitalExpand description="The state or quality of being free from agitation, disturbance or strong emotion.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased calmness." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged calmness." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased calmness." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Loqquacity() {
+    return (
+        <Li>
+        <VitalTitle task="Loquacity - SENTIMENT GROUP"/>
+        <VitalExpand description="The quality of talking a great deal; talkativeness.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased nervousness." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged nervousness." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased nervousness." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Restlessness() {
+    return (
+        <Li>
+        <VitalTitle task="Restlessness - SENTIMENT GROUP"/>
+        <VitalExpand description="The inability to rest or relax as a result of anxiety or boredom.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased restlessness." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged restlessness." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased restlessness." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Impatience() {
+    return (
+        <Li>
+        <VitalTitle task="Impatience - SENTIMENT GROUP"/>
+        <VitalExpand description="The tendency to be impatient; irritability or restlessness.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased impatience." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged impatience." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased impatience." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Hypermotility() {
+    return (
+        <Li>
+        <VitalTitle task="Hypermotility - DEBRIS GROUP"/>
+        <VitalExpand description="Abnormal or excessive movement in the bowels">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased hypermotility." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged hypermotility." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased hypermotility." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Continence() {
+    return (
+        <Li>
+        <VitalTitle task="Continence - DEBRIS GROUP"/>
+        <VitalExpand description="The ability to control movements of the bowels and bladder.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits decreased continence." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged continence." score="2"/>
+                <Selection assistanceRating="Client exhibits increased continence." score="3"/>
+            </VitalRating>
+        </VitalExpand>     
+        </Li>
+    );
+}
+export function Constipation() {
+    return (
+        <Li>
+        <VitalTitle task="Constipation - DEBRIS GROUP"/>
+        <VitalExpand description="Infrequent bowel movements, and small, hard-to-pass, stool.">
+            <VitalRating>
+                <Selection assistanceRating="Client exhibits increased constipation." score="1"/>
+                <Selection assistanceRating="Client exhibits unchanged constipation." score="2"/>
+                <Selection assistanceRating="Client exhibits decreased constipation." score="3"/>
             </VitalRating>
         </VitalExpand>     
         </Li>
