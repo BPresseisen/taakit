@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "materialize-css/dist/css/materialize.min.css";
 import { 
     TaskContainer, 
     Feeding,
@@ -24,8 +25,6 @@ class TasksPage extends Component {
                     <div className="col s12 l6 offset-l3 center">
                       <h2> Date | Shift ID | Patient Name<br/></h2>
                        <h3>Todays Shift (link) >></h3>
-                      
-
                     </div>
                 </div>
                 <div className="row">

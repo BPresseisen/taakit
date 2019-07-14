@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { SignUpButton, SignUp } from '../components/Form';
+import "materialize-css/dist/css/materialize.min.css";
 import axios from 'axios'
 
 

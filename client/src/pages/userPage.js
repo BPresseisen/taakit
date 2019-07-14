@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { PatientContainer, PatientChip } from '../components/Home';
+import "materialize-css/dist/css/materialize.min.css";
 
 class HomePage extends Component {
     render() {

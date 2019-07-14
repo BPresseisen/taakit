@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TaskContainer } from '../components/Tasks';
 import { SubmittedTasks } from '../components/Shift';
+import "materialize-css/dist/css/materialize.min.css";
 
 
 

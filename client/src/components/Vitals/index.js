@@ -29,9 +29,9 @@ export function Selection(props) {
 
 export function VitalButton(props) {
     return (
-        <button class="btn waves-effect waves-light teal-text" type="submit" name="action">
+        <button className="btn waves-effect waves-light teal-text" type="submit" name="action">
             Submit
-            <i class="material-icons right">send</i>
+            <i className="material-icons right">send</i>
          </button>
     )
 }

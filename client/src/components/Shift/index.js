@@ -3,9 +3,9 @@ import "./style.css";
 
 export function NotesButton(props) {
     return (
-        <button class="btn waves-effect waves-light teal-text" type="submit" name="action">
+        <button className="btn waves-effect waves-light teal-text" type="submit" name="action">
             Submit
-            <i class="material-icons right">send</i>
+            <i className="material-icons right">send</i>
          </button>
     )
 }
@@ -44,7 +44,6 @@ export function SubmittedTaskTitle(props) {
                     Task ID: {props.taskID}<br/>
                     Logged: {props.timeStamp}
                 </div>
-            
         </div>
     );
 }
@@ -74,7 +73,7 @@ export function SubmittedTaskExpand(props) {
                         <div className="input-field col s12">
                         <i className="material-icons prefix teal-text">chat</i>
                         <textarea id="icon_prefix2" className="materialize-textarea"></textarea>
-                        <label for="icon_prefix2">Notes about the taakit task</label>
+                        <label forHTML="icon_prefix2">Notes about the taakit task</label>
                         </div>
                     </div>
                     <NotesButton/>

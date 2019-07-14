@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import Github from '../assets/images/github.png';
-
-// import Github from '../assets/images/github.png';
+// import Github from './assets/images/github.png';
 
 
-class Footer extends Component {
-    render() {
-        return (
+export function Footer(props) {
+  return (
 <footer className="page-footer">
             <div className="container">
               <div className="row">
@@ -67,13 +64,10 @@ class Footer extends Component {
             <div className="footer-copyright">
               <div className="container">
               © 2019 Copyright
-              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank">Github Repo <img src={Github} alt="Github" className="githublogo"/></a>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank">Github Repo </a>
 
               </div>
             </div>
-          </footer>            
-              
-        )
-    }
-}
-export default Footer
+          </footer>  
+          );
+        }
