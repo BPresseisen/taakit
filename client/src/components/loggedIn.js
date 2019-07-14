@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component } from 'react';
+import axios from 'axios';
+import {Slim, Med } from '../components/Grid'
 
 class LoggedIn extends Component {
     constructor() {
@@ -42,15 +43,11 @@ class LoggedIn extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col s12 l6 offset-l3 center">
-                    {this.state.loggedIn &&
-                        <h3>You are logged in as {this.state.username}!</h3>
-                        }
-                    </div>
-                </div>
-            </div>
+           <Med>
+            {this.state.loggedIn &&
+            <h3>You are logged in as {this.state.username}!</h3>
+            }
+           </Med>
         )
     }
 }

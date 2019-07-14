@@ -1,6 +1,28 @@
 import React from 'react';
 import "./style.css";
 
+export function ShiftCard(props) {
+    return (
+        <div className="row">
+            <div className="col s12">
+                <div className="card teal lighted-1">
+                    <div className="card-content white-text">
+                        <span className="card-title">Shift ID: 12345</span>
+                        <p>Careperson: Dr. Quinn</p>
+                        <p>Client: Gene Grogan</p>
+                        <p>Date: 7/11/2019</p>
+                        </div>
+                        <div className="card-action">
+                        <a href="/clientPage" className="white-text">Client Details &raquo;</a>
+                        <a href="/shift" className="white-text">Shift Details &raquo;</a>
+                        <a href="vitals" class="waves-effect waves-light btn"><i class="material-icons right">done</i>End Shift</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   );
+}
+
 export function Input(props) {
     return (
       <div className="form-group">
@@ -29,7 +51,7 @@ export function Selection(props) {
 
 export function TaskButton(props) {
     return (
-        <button className="btn waves-effect waves-light teal-text" type="submit" name="action">
+        <button className="btn waves-effect waves-light" type="submit" name="action">
             Submit
             <i className="material-icons right">send</i>
          </button>
@@ -80,7 +102,7 @@ export function TaskExpand(props) {
             <div>
                 {props.children}
             </div>
-            <TaskButton/>
+            <TaskButton onClick={props.toast} />
             </form>
             </span>
         </div>
