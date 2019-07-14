@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import {Med} from '../components/Grid'
 import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
 import { 
     VitalContainer,
     JointPain, 
@@ -24,55 +26,53 @@ import {
     Constipation,
     Hypertonicity,
     Jitteriness,
-    Socialization
+    Socialization,
+    VitalButton
   
 } from "../components/Vitals";
 
 
 class VitalsPage extends Component {
+    componentDidMount() {
+        M.AutoInit();
+    }
+
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col s12 l6 offset-l3 center">
-                      <h2> Date | Shift ID | Patient Name<br/></h2>
-                       <h3>Todays Shift (link) >></h3>
-                      
-
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col s12 l6 offset-l3">
-                    <VitalContainer>
-                            <JointPain/>
-                            <MusclePain/>
-                            <NervePain/>
-                            <GastroPain/>
-                            <Appetite/>
-                            <BodyTemp/>
-                            <Vigor/>
-                            <SleepQual/>
-                            <Fatigue/>
-                            <Mobility/>
-                            <Balance/>
-                            <ShortBreath/>
-                            <Moodiness/>
-                            <Calmness/>
-                            <Loqquacity/>
-                            <Restlessness/>
-                            <Impatience/>
-                            <Hypermotility/>
-                            <Continence/>
-                            <Constipation/>
-                            <Continence/>
-                            <Hypertonicity/>
-                            <Jitteriness/>
-                            <Socialization/>
-                        </VitalContainer>
-                    </div>
-                </div>
-            </div>
-            
+            <Fragment>
+            <Med>
+                <h2>Vitals</h2>
+            </Med>
+            <Med>
+                <VitalContainer>
+                        <JointPain/>
+                        <MusclePain/>
+                        <NervePain/>
+                        <GastroPain/>
+                        <Appetite/>
+                        <BodyTemp/>
+                        <Vigor/>
+                        <SleepQual/>
+                        <Fatigue/>
+                        <Mobility/>
+                        <Balance/>
+                        <ShortBreath/>
+                        <Moodiness/>
+                        <Calmness/>
+                        <Loqquacity/>
+                        <Restlessness/>
+                        <Impatience/>
+                        <Hypermotility/>
+                        <Continence/>
+                        <Constipation/>
+                        <Continence/>
+                        <Hypertonicity/>
+                        <Jitteriness/>
+                        <Socialization/>
+                    </VitalContainer>
+                    <VitalButton/>
+                </Med>
+            </Fragment>     
         )
     }
 }

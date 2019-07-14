@@ -27,7 +27,7 @@ export function PatientChip(props) {
         userID: "12345"
     }
     return (
-        <Link to="patients/userID">
+        <Link to="/client">
          <div class="chip teal lighten-2 white-text ">
              <i class="tiny material-icons">folder_shared</i> &nbsp;
            {patient.fullName}
@@ -61,3 +61,5 @@ export default function SearchForm({ onSearch }) {
       </form>
     );
   }
+
+ 

@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { Slim, Med } from '../components/Grid';
 import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
 import { 
     TaskContainer, 
     Feeding,
@@ -13,39 +15,51 @@ import {
     Transportation,
     Shopping,
     MediaTech,
-    Housekeeping
+    Housekeeping, 
+    ShiftCard
 } from "../components/Tasks";
 
 
+
+
 class TasksPage extends Component {
+    componentDidMount() {
+        M.AutoInit();
+    }
+
+    toast(){
+        M.toast({html: 'Task logged!'})
+    }
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col s12 l6 offset-l3 center">
-                      <h2> Date | Shift ID | Patient Name<br/></h2>
-                       <h3>Todays Shift (link) >></h3>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col s12 l6 offset-l3">
-                    <TaskContainer>
-                            <FoodPrep/>
-                            <Feeding/>
-                            <Medication/>
-                            <Toileting/>
-                            <Bathing/>
-                            <Laundry/>
-                            <Dressing/>
-                            <Housekeeping/>
-                            <Mobility/>
-                            <Transportation/>
-                            <Shopping/>
-                            <MediaTech/>
-                        </TaskContainer>
-                    </div>
-                </div>
-            </div>
+           
+           <Fragment>
+               <Med>
+               <ShiftCard/>
+               </Med>
+               <Med>
+               <TaskContainer>
+                    <FoodPrep/>
+                    <Feeding/>
+                    <Medication/>
+                    <Toileting/>
+                    <Bathing/>
+                    <Laundry/>
+                    <Dressing/>
+                    <Housekeeping/>
+                    <Mobility/>
+                    <Transportation/>
+                    <Shopping/>
+                    <MediaTech/>
+                </TaskContainer>
+               </Med>
+           </Fragment>
+                      
+                   
+                       
+                   
+                 
+                 
             
         )
     }

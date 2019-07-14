@@ -1,40 +1,41 @@
-import React, { Component } from 'react';
-import { TaskContainer } from '../components/Tasks';
+import React, { Component, Fragment } from 'react';
+import { TaskContainer, ShiftCard } from '../components/Tasks';
 import { SubmittedTasks } from '../components/Shift';
+import { VitalsCard } from '../components/Vitals';
+import { Slim, Med } from '../components/Grid';
 import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 
 
 class ShiftPage extends Component {
     
-
-
+    componentDidMount() {
+        M.AutoInit();
+        
+    }
 
     render() {
+
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col s12 l6 offset-l3 center">
-                      <h2> Date | Shift ID | Patient Name<br/></h2>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col s12 l6 offset-l3">
-                        <TaskContainer>
-                            <SubmittedTasks/>
-                        </TaskContainer>
+            <Fragment>
+            <Med>
+               <ShiftCard/>
+            </Med>
+            <Med>
+                <TaskContainer>
+                    <SubmittedTasks/>
+                </TaskContainer>
 
-                        <TaskContainer>
-                            <SubmittedTasks/>
-                        </TaskContainer>
+                <TaskContainer>
+                    <SubmittedTasks/>
+                </TaskContainer>
 
-                        <TaskContainer>
-                            <SubmittedTasks/>
-                        </TaskContainer>
-                    </div>
-                </div>
-            </div>
-            
+                <TaskContainer>
+                    <SubmittedTasks/>
+                </TaskContainer>
+            </Med>
+            </Fragment>
         )
     }
 }

@@ -1,6 +1,5 @@
 import React, { Component, Fragment  } from 'react';
 import { Route, Switch } from 'react-router-dom';
-// import { Route, Link } from 'react-router-dom'
 import axios from 'axios';
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -10,12 +9,13 @@ import LoginForm from './pages/loginPage';
 import Navbar from './layout/navbar';
 import About from './pages/aboutPage';
 import LoggedIn from './components/loggedIn';
-import HomePage from './pages/userPage';
+import UserPage from './pages/userPage';
 import TasksPage from './pages/tasksPage';
 import VitalsPage from './pages/vitalsPage';
 import ShiftPage from './pages/shiftPage';
 import { Footer } from './components/Footer';
-
+import ClientPage from './pages/clientPage';
+import Error from './pages/errorPage';
 
 class App extends Component {
  
@@ -30,7 +30,9 @@ class App extends Component {
     this.getUser = this.getUser.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.updateUser = this.updateUser.bind(this)
+    this.M = window.M;
   }
+  
   componentDidMount() {
     this.getUser()
   }
@@ -66,13 +68,15 @@ class App extends Component {
         <LoggedIn/>
         {/* Routes to different components */}
         <Switch>
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={UserPage} />
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
           <Route path="/tasks" component={TasksPage}/>
           <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>
+          <Route path="/client" component={ClientPage}/>
+          <Route component={Error}/>
           </Switch>
         <Footer/>
       </Fragment>
