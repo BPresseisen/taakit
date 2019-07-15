@@ -8,7 +8,6 @@ import Signup from './pages/signupPage';
 import LoginForm from './pages/loginPage';
 import Navbar from './layout/navbar';
 import About from './pages/aboutPage';
-import LoggedIn from './components/loggedIn';
 import UserPage from './pages/userPage';
 import TasksPage from './pages/tasksPage';
 import VitalsPage from './pages/vitalsPage';
@@ -64,9 +63,7 @@ class App extends Component {
     return (
       <Fragment>
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
-           {/* greet user if logged in: */}
-        <LoggedIn/>
-        {/* Routes to different components */}
+         <main>
         <Switch>
           <Route exact path="/" component={UserPage} />
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
@@ -78,6 +75,7 @@ class App extends Component {
           <Route path="/client" component={ClientPage}/>
           <Route component={Error}/>
           </Switch>
+          </main>
         <Footer/>
       </Fragment>
     );

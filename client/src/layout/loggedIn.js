@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import axios from 'axios';
-import {Slim, Med } from '../components/Grid'
 
 class LoggedIn extends Component {
     constructor() {
@@ -43,11 +42,11 @@ class LoggedIn extends Component {
 
     render() {
         return (
-           <Med>
+         <Fragment>
             {this.state.loggedIn &&
-            <h3>You are logged in as {this.state.username}!</h3>
+            <span className="nav-text"><i className="material-icons">verified_user</i>{this.state.username}</span>
             }
-           </Med>
+          </Fragment>
         )
     }
 }
