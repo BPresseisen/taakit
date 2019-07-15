@@ -264,7 +264,7 @@ export function ShortBreath() {
 export function Hypertonicity() {
     return (
         <Li>
-        <VitalTitle task="Hypertonicity -  STEADY GROUP"/>
+        <VitalTitle task="Hypertonicity -  BALLAST GROUP"/>
         <VitalExpand description="Spastic dystonia is a continual increase in the muscle tension compared to normal resting tension, regardless of movement.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits increased hypertonicity." score="1"/>
@@ -278,7 +278,7 @@ export function Hypertonicity() {
 export function Jitteriness() {
     return (
         <Li>
-        <VitalTitle task="Jitteriness - STEADY GROUP"/>
+        <VitalTitle task="Jitteriness - BALLAST GROUP"/>
         <VitalExpand description="Any involuntary movement; Hallmark of a tremor.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits increased jitteriness." score="1"/>
@@ -292,7 +292,7 @@ export function Jitteriness() {
 export function Socialization() {
     return (
         <Li>
-        <VitalTitle task="Socialization - STEADY GROUP"/>
+        <VitalTitle task="Socialization - BALLAST GROUP"/>
         <VitalExpand description="Likelihood and tendency to socialize with others.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits decreased socialization." score="1"/>
@@ -306,7 +306,7 @@ export function Socialization() {
 export function Mobility() {
     return (
         <Li>
-        <VitalTitle task="Mobility - STEADY GROUP"/>
+        <VitalTitle task="Mobility - BALLAST GROUP"/>
         <VitalExpand description="The ability to move or be moved freely and easily.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits decreased mobility." score="1"/>
@@ -320,7 +320,7 @@ export function Mobility() {
 export function Balance() {
     return (
         <Li>
-        <VitalTitle task="Balance - STEADY GROUP"/>
+        <VitalTitle task="Balance - BALLAST GROUP"/>
         <VitalExpand description="An even distribution of weight enabling someone or something to remain upright and steady.">
             <VitalRating>
                 <Selection assistanceRating="Client exhibits decreased balance." score="1"/>
