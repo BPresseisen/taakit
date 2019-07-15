@@ -71,7 +71,7 @@ class Signup extends Component {
 				if (!response.data.errmsg) {
 					console.log('successful signup')
 					this.setState({ //redirect to login page
-						redirectTo: '/'
+						redirectTo: '/dashboardPage'
 					})
 				} else {
 					console.log('username already taken')
@@ -146,7 +146,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="email"
                       name="email"
@@ -154,10 +154,8 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="email">Email</label>
                     </div>
-                  </div>
-                  
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                
+                    <div className="input-field col s3">
                       <input className="validate"
                       type="text"
                       name="mobile"
@@ -165,9 +163,8 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="mobile">Mobile Number</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                
+                    <div className="input-field col s3">
                       <input className="validate"
                       type="text"
                       name="landline"
@@ -177,7 +174,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                        type="text"
                       name="address"
@@ -185,8 +182,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="address">Address</label>
                     </div>
-                  </div>
-                  <div className="row">
+                
                     <div className="input-field col s6">
                       <input className="validate"
                        type="text"
@@ -195,7 +191,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="city">City</label>
                     </div>
-                    <div className="input-field col s2">
+                    <div className="input-field col s4">
                       <input className="validate"
                       type="text"
                       name="state"
@@ -225,25 +221,13 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                     </div>
                   </div>
-               
-        
-                  <div className="row">
-                    <div className="input-field col s12">
-                      <input className="validate"
-                      type="text"
-                      name="mobile"
-                      value={this.state.mobile}
-                      onChange={this.handleChange}/>
-                      <label for="mobile">Phone Number</label>
-                    </div>
-                  </div>
                   <div className="row">
                         <div className="col s12 l6 offset-l3">
                           <button className="btn waves-effect waves-light" type="submit" name="action"
                           onClick={this.handleSubmit}>Sign Up
                             <i className="material-icons right">send</i>
                         </button>
-                        </div>
+                      </div>
                   </div>
                 </form>
               </div>
