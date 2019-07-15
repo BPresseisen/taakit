@@ -5,7 +5,7 @@ export function ShiftCard(props) {
     return (
         <div className="row">
             <div className="col s12">
-                <div className="card teal lighted-1">
+                <div className="card grey darken-2">
                     <div className="card-content white-text">
                         <span className="card-title">Shift ID: 12345</span>
                         <p>Careperson: Dr. Quinn</p>
@@ -15,7 +15,7 @@ export function ShiftCard(props) {
                         <div className="card-action">
                         <a href="/clientPage" className="white-text">Client Details &raquo;</a>
                         <a href="/shift" className="white-text">Shift Details &raquo;</a>
-                        <a href="vitals" class="waves-effect waves-light btn"><i class="material-icons right">done</i>End Shift</a>
+                        <a href="vitals" class="waves-effect waves-light btn grey lighten-2 black-text"><i class="material-icons right">done</i>End Shift</a>
                     </div>
                 </div>
             </div>

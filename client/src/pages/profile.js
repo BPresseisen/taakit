@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { SignUpButton, SignUp } from '../components/Form';
+// import { SignUpButton, SignUp } from '../components/Form';
 import axios from 'axios'
 import M from "materialize-css/dist/js/materialize.min.js";
 
@@ -56,7 +56,7 @@ class Profile extends Component {
 				if (!response.data.errmsg) {
 					console.log('successful profile generation')
 					this.setState({ //redirect to login page
-						redirectTo: '/dashboard'
+						redirectTo: '/dashboardPage'
 					})
 				} else {
 					console.log('goonie goo goo')
@@ -93,8 +93,7 @@ class Profile extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="firstName">First Name</label>
                     </div>
-                  </div>
-                  <div className="row">
+                 
                   <div className="input-field col s12 l6 offset-l3">
                       <input className="validate"
                       type="text"
@@ -117,8 +116,7 @@ class Profile extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="email">email</label>
                     </div>
-                  </div>
-                  <div className="row">
+                  
                   <div className="input-field col s12 l6 offset-l3">
                       <input className="validate"
                       type="text"
@@ -204,13 +202,11 @@ class Profile extends Component {
                   </div>
                   <div className="row">
                         <div className="col s12 l6 offset-l3">
-                          <Link to="/role">
                           <button class="btn waves-effect waves-light" type="submit" name="action"
                           onClick={this.handleSubmit}
                           >Create Profile
                             <i class="material-icons right">send</i>
                         </button>
-                          </Link>
                         </div>
                   </div>
                 </form>

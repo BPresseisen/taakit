@@ -10,12 +10,13 @@ import Navbar from './layout/navbar';
 import About from './pages/aboutPage';
 import Contact from './pages/contactPage';
 import Summary from './pages/summaryPage';
-import UserPage from './pages/userPage';
+import DashboardPage from './pages/dashboardPage';
 import TasksPage from './pages/tasksPage';
 import VitalsPage from './pages/vitalsPage';
 import ShiftPage from './pages/shiftPage';
 import { Footer } from './components/Footer';
 import ClientPage from './pages/clientPage';
+import CreateClient from './pages/createClient';
 import Error from './pages/errorPage';
 
 class App extends Component {
@@ -67,7 +68,7 @@ class App extends Component {
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
          <main>
         <Switch>
-          <Route exact path="/" component={UserPage} />
+          <Route exact path="/" component={DashboardPage} />
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
@@ -76,6 +77,7 @@ class App extends Component {
           <Route path="/tasks" component={TasksPage}/>
           <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>
+          <Route path="/createclient" component={CreateClient}/>
           <Route path="/client" component={ClientPage}/>
           <Route component={Error}/>
           </Switch>
