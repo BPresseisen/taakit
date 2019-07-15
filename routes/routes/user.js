@@ -18,6 +18,7 @@ router.post('/', (req, res) => {
         }
         else {
             const newUser = new User({
+                username: username,
                 password: password,
                 firstname: firstname,
                 lastname: lastname,
@@ -51,14 +52,13 @@ router.post(
         console.log('logged in', req.user);
         var userInfo = {
             username: req.user.username,
-            username: req.user.username,
             firstname: req.user.firstname,
             lastname: req.user.lastname,
             role: req.user.role,
             email: req.user.email,
             mobile: req.user.mobile,
             landline: req.user.landline,
-            address: requ.user.address,
+            address: req.user.address,
             city: req.user.city,
             zip: req.user.zip,
             country: req.user.country,
