@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
 import axios from 'axios';
 
 
@@ -55,7 +56,9 @@ handleSubmit(event) {
         })
 }
 
-
+componentDidMount() {
+  M.AutoInit();
+}
 
 render() {
   if (this.state.redirectTo) {
@@ -77,7 +80,6 @@ render() {
                      type="text"
                      id="username"
                      name="username"
-                     placeholder="Username"
                      value={this.state.username}
                      onChange={this.handleChange}/>
                     <label for="email">Email</label>
@@ -86,7 +88,6 @@ render() {
                 <div className="row">
                   <div className="input-field col s12 l6 offset-l3">
                     <input className="validate"
-                     placeholder="password"
                      type="password"
                      name="password"
                      value={this.state.password}
@@ -96,13 +97,10 @@ render() {
                 </div>
                 <div className="row">
                       <div className="col s12 l6 offset-l3">
-                      <Link to="/role">
                       <button class="btn waves-effect waves-light" type="submit" name="action"
-                      onClick={this.handleSubmit}
-                      >Sign In
+                      onClick={this.handleSubmit}>Sign In
                           <i class="material-icons right">send</i>
                       </button>
-                      </Link>
                       </div>
                 </div>
            

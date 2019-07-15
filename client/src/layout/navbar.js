@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 import axios from 'axios';
+import LoggedIn from '../layout/loggedIn';
+import "./style.css";
 
 
 class Navbar extends Component {
@@ -65,13 +67,18 @@ class Navbar extends Component {
         return (
         <header>
             <div className="navbar-fixed ">
+                <ul id="dropdown1" class="dropdown-content nav-width">
+                  <li><a href="#">&nbsp;</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/">My Account</a></li>
+                  <li><a href="/home" onClick={this.logout}>Logout</a></li>
+                </ul>
                 <nav>
                     <div className="nav-wrapper">
-                        <a href="/" className="brand-logo">Taakit</a>
+                        <a href="/" className="brand-logo center">Taakit</a>
                         <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-                        <ul className="right hide-on-med-and-down">
-                            <li>  <a href="/">My Account</a></li>
-                            <li><a href="/home" onClick={this.logout}>Logout</a></li>
+                        <ul className="right hide-on-med-and-down ">
+                        <li className="nav-width"><a class="dropdown-trigger" href="/" data-target="dropdown1">My Account<i class="material-icons right">arrow_drop_down</i></a></li>
                         </ul>
                     </div>
                 </nav>

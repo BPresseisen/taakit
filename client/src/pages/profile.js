@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { SignUpButton, SignUp } from '../components/Form';
 import axios from 'axios'
+import M from "materialize-css/dist/js/materialize.min.js";
 
 
 class Profile extends Component {
@@ -65,7 +66,11 @@ class Profile extends Component {
 				console.log(error)
 
 			})
-	}
+  }
+  
+  componentDidMount() {
+    M.AutoInit();
+}
       
     render() {
         return (
