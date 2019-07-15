@@ -83,14 +83,14 @@ class Signup extends Component {
         return (
             <div className="container">
               <div className="row">
-                <form className="col s12" id="signupForm">
+                <form className="col s12 l6 offset-l3" id="signupForm">
                 <div className="row ">
                     <div className="col s12 center formTitle">
                       Sign up for Taakit
                     </div>
                     </div>
                     <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                         <input className="validate"
                         type="email"
                         id="username"
@@ -102,7 +102,7 @@ class Signup extends Component {
                       </div>
                     </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                       <input className="validate"
                       type="password"
                       name="password"
@@ -112,8 +112,8 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
-                    <select multiple>
+                    <div className="input-field col s12">
+                    <select>
                       <option value="" disabled selected>Choose your option</option>
                       <option value={this.state.role}>Caregiver</option>
                       <option value={this.state.role}>Professional Aide</option>
@@ -122,7 +122,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="text"
                       name="firstname"
@@ -130,9 +130,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label for="firstname">First Name</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="text"
                       name="lastname"
@@ -141,18 +139,9 @@ class Signup extends Component {
                       <label for="lastname">Last Name</label>
                     </div>
                   </div>
+                  
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
-                      <input className="validate"
-                      type="text"
-                      name="mobile"
-                      value={this.state.mobile}
-                      onChange={this.handleChange}/>
-                      <label for="mobile">Phone Number</label>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                       <input className="validate"
                        type="text"
                       name="address"
@@ -162,7 +151,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                        type="text"
                       name="city"
@@ -170,9 +159,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label for="city">City</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s2">
                       <input className="validate"
                       type="text"
                       name="state"
@@ -180,9 +167,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label for="state">State</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s2">
                       <input className="validate"
                        type="text"
                       name="zip"
@@ -190,9 +175,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label for="state">Zip</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s2">
                       <input className="validate"
                       type="text"
                       name="country"
@@ -206,8 +189,20 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                     </div>
                   </div>
+               
+        
                   <div className="row">
-                        <div className="col s12 l6 offset-l3">
+                    <div className="input-field col s12">
+                      <input className="validate"
+                      type="text"
+                      name="mobile"
+                      value={this.state.mobile}
+                      onChange={this.handleChange}/>
+                      <label for="mobile">Phone Number</label>
+                    </div>
+                  </div>
+                  <div className="row">
+                        <div className="col s12">
                           <button class="btn waves-effect waves-light" type="submit" name="action"
                           onClick={this.handleSubmit}>Sign Up
                             <i class="material-icons right">send</i>
