@@ -18,8 +18,18 @@ router.post('/', (req, res) => {
         }
         else {
             const newUser = new User({
-                username: username,
-                password: password
+                password: password,
+                firstname: firstname,
+                lastname: lastname,
+                role: role,
+                email: email,
+                mobile: mobile,
+                landline: landline,
+                address: address,
+                city: city,
+                zip: zip,
+                country: country,
+                clientID: clientID
             })
             newUser.save((err, savedUser) => {
                 if (err) return res.json(err)
@@ -40,7 +50,19 @@ router.post(
     (req, res) => {
         console.log('logged in', req.user);
         var userInfo = {
-            username: req.user.username
+            username: req.user.username,
+            username: req.user.username,
+            firstname: req.user.firstname,
+            lastname: req.user.lastname,
+            role: req.user.role,
+            email: req.user.email,
+            mobile: req.user.mobile,
+            landline: req.user.landline,
+            address: requ.user.address,
+            city: req.user.city,
+            zip: req.user.zip,
+            country: req.user.country,
+            clientID: req.user.clientID
         };
         res.send(userInfo);
     }
@@ -61,7 +83,7 @@ router.post('/logout', (req, res) => {
         req.logout()
         res.send({ msg: 'logging out' })
     } else {
-        res.send({ msg: 'no patient to log out' })
+        res.send({ msg: 'no user to log out' })
     }
 })
 
