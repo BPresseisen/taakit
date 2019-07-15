@@ -13,7 +13,6 @@ mongoose.promise = Promise
         fullname: {type: String, unique: false, required: true},
         email: {type: String, unique: true, required: true},
         mobile: {type: String, unique: true, required: true},
-        landline: {type: String, unique: true, false},
         address: {type: String, unique: false, required},
         city: {type: String, unique: false, required},
         state: {type: String, unique: false, required},
