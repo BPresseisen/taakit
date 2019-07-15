@@ -14,7 +14,9 @@ class Signup extends Component {
       role: '',
       firstname: '',
       lastname: '',
+      email: '',
       mobile: '',
+      landline: '',
       address: '',
       city: '',
       state: '',
@@ -37,7 +39,9 @@ class Signup extends Component {
     console.log(this.state.firstname);
     console.log(this.state.lastname);
     console.log(this.state.role);
+    console.log(this.state.email);
     console.log(this.state.mobile);
+    console.log(this.state.landline);
     console.log(this.state.address);
     console.log(this.state.city);
     console.log(this.state.state);
@@ -53,10 +57,12 @@ class Signup extends Component {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       role: this.state.role,
+      email: this.state.email,
       mobile: this.state.mobile,
+      landline:this.state.landline,
       address: this.state.address,
       city: this.state.city,
-      zip: this.state.password,
+      zip: this.state.zip,
       country: this.state.country,
       clientID: this.state.clientID
 		})
@@ -92,13 +98,13 @@ class Signup extends Component {
                     <div className="row">
                     <div className="input-field col s12 l6 offset-l3">
                         <input className="validate"
-                        type="email"
+                        type="text"
                         id="username"
                         name="username"
                         value={this.state.username}
                         onChange={this.handleChange}/>
-                        <label for="email">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        <label htmlFor="email">Username</label>
+                        <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
                       </div>
                     </div>
                   <div className="row">
@@ -108,14 +114,14 @@ class Signup extends Component {
                       name="password"
                       value={this.state.password}
                       onChange={this.handleChange}/>
-                      <label for="password">Password</label>
+                      <label htmlFor="password">Password</label>
                     </div>
                   </div>
                   <div className="row">
                     <div className="input-field col s12 l6 offset-l3">
                     <select multiple>
                       <option value="" disabled selected>Choose your option</option>
-                      <option value={this.state.role}>Caregiver</option>
+                      <option value={this.state.role}>Caregiver (Family or Friend)</option>
                       <option value={this.state.role}>Professional Aide</option>
                     </select>
                     <label>Role</label>
@@ -128,7 +134,7 @@ class Signup extends Component {
                       name="firstname"
                       value={this.state.firstname}
                       onChange={this.handleChange}/>
-                      <label for="firstname">First Name</label>
+                      <label htmlFor="firstname">First Name</label>
                     </div>
                   </div>
                   <div className="row">
@@ -138,7 +144,17 @@ class Signup extends Component {
                       name="lastname"
                       value={this.state.lastname}
                       onChange={this.handleChange}/>
-                      <label for="lastname">Last Name</label>
+                      <label htmlFor="lastname">Last Name</label>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="input-field col s12 l6 offset-l3">
+                      <input className="validate"
+                      type="email"
+                      name="email"
+                      value={this.state.email}
+                      onChange={this.handleChange}/>
+                      <label htmlFor="email">Email</label>
                     </div>
                   </div>
                   <div className="row">
@@ -148,7 +164,17 @@ class Signup extends Component {
                       name="mobile"
                       value={this.state.mobile}
                       onChange={this.handleChange}/>
-                      <label for="mobile">Phone Number</label>
+                      <label htmlFor="mobile">Mobile Number</label>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="input-field col s12 l6 offset-l3">
+                      <input className="validate"
+                      type="text"
+                      name="landline"
+                      value={this.state.landline}
+                      onChange={this.handleChange}/>
+                      <label htmlFor="landline">Landline Number</label>
                     </div>
                   </div>
                   <div className="row">
@@ -158,7 +184,7 @@ class Signup extends Component {
                       name="address"
                       value={this.state.address}
                       onChange={this.handleChange}/>
-                      <label for="address">Address</label>
+                      <label htmlFor="address">Address</label>
                     </div>
                   </div>
                   <div className="row">
@@ -168,7 +194,7 @@ class Signup extends Component {
                       name="city"
                       value={this.state.city}
                       onChange={this.handleChange}/>
-                      <label for="city">City</label>
+                      <label htmlFor="city">City</label>
                     </div>
                   </div>
                   <div className="row">
@@ -178,7 +204,7 @@ class Signup extends Component {
                       name="state"
                       value={this.state.state}
                       onChange={this.handleChange}/>
-                      <label for="state">State</label>
+                      <label htmlFor="state">State</label>
                     </div>
                   </div>
                   <div className="row">
@@ -188,7 +214,7 @@ class Signup extends Component {
                       name="zip"
                       value={this.state.zip}
                       onChange={this.handleChange}/>
-                      <label for="state">Zip</label>
+                      <label htmlFor="state">Zip</label>
                     </div>
                   </div>
                   <div className="row">
@@ -198,7 +224,7 @@ class Signup extends Component {
                       name="country"
                       value={this.state.country}
                       onChange={this.handleChange}/>
-                      <label for="state">Country</label>
+                      <label htmlFor="state">Country</label>
                       <input className="validate"
                        type="hidden"
                       name="clientID"
@@ -208,9 +234,9 @@ class Signup extends Component {
                   </div>
                   <div className="row">
                         <div className="col s12 l6 offset-l3">
-                          <button class="btn waves-effect waves-light" type="submit" name="action"
+                          <button className="btn waves-effect waves-light" type="submit" name="action"
                           onClick={this.handleSubmit}>Sign Up
-                            <i class="material-icons right">send</i>
+                            <i className="material-icons right">send</i>
                         </button>
                         </div>
                   </div>
