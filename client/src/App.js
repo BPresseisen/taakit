@@ -9,7 +9,6 @@ import LoginForm from './pages/loginPage';
 import Navbar from './layout/navbar';
 import About from './pages/aboutPage';
 import Contact from './pages/contactPage';
-import Summary from './pages/summaryPage';
 import UserPage from './pages/userPage';
 import TasksPage from './pages/tasksPage';
 import VitalsPage from './pages/vitalsPage';
@@ -67,12 +66,12 @@ class App extends Component {
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
          <main>
         <Switch>
-          <Route exact path="/" component={UserPage} />
+          {/* <Route exact path="/" component={UserPage} /> */}
+          <Route path="/" component={UserPage} />
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
           <Route path="/contact" component={Contact}/> 
-          <Route path="/summary" component={Summary}/> 
           <Route path="/tasks" component={TasksPage}/>
           <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>

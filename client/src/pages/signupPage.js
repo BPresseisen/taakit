@@ -62,6 +62,7 @@ class Signup extends Component {
       landline:this.state.landline,
       address: this.state.address,
       city: this.state.city,
+      state: this.state.state,
       zip: this.state.zip,
       country: this.state.country,
       clientID: this.state.clientID
@@ -119,10 +120,10 @@ class Signup extends Component {
                   </div>
                   <div className="row">
                     <div className="input-field col s12 l6 offset-l3">
-                    <select multiple>
+                    <select multiple onChange={this.handleChange} name="role" value={this.state.role}>
                       <option value="" disabled selected>Choose your option</option>
-                      <option value={this.state.role}>Caregiver (Family or Friend)</option>
-                      <option value={this.state.role}>Professional Aide</option>
+                      <option value="1">Caregiver (Family or Friend)</option>
+                      <option value="2">Professional Aide</option>
                     </select>
                     <label>Role</label>
                     </div>
