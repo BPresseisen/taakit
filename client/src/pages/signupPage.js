@@ -14,7 +14,6 @@ class Signup extends Component {
       role: '',
       firstname: '',
       lastname: '',
-      email: '',
       mobile: '',
       address: '',
       city: '',
@@ -90,12 +89,12 @@ class Signup extends Component {
                     <div className="row">
                     <div className="input-field col s12">
                         <input className="validate"
-                        type="text"
+                        type="email"
                         id="username"
                         name="username"
                         value={this.state.username}
                         onChange={this.handleChange}/>
-                        <label htmlFor="email">Username</label>
+                        <label htmlFor="username">email</label>
                         <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
                       </div>
                     </div>
