@@ -33,7 +33,7 @@ main {
   }         
 #signupForm, #profileForm, #signinForm, #roleForm {
   justify-content: center;
-  padding: 30px;
+
 }
 
 .formTitle {

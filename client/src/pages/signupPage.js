@@ -72,7 +72,7 @@ class Signup extends Component {
 				if (!response.data.errmsg) {
 					console.log('successful signup')
 					this.setState({ //redirect to login page
-						redirectTo: '/'
+						redirectTo: '/dashboardPage'
 					})
 				} else {
 					console.log('username already taken')
@@ -90,14 +90,14 @@ class Signup extends Component {
         return (
             <div className="container">
               <div className="row">
-                <form className="col s12" id="signupForm">
+                <form className="col s12 l6 offset-l3" id="signupForm">
                 <div className="row ">
                     <div className="col s12 center formTitle">
                       Sign up for Taakit
                     </div>
                     </div>
                     <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                         <input className="validate"
                         type="text"
                         id="username"
@@ -109,7 +109,7 @@ class Signup extends Component {
                       </div>
                     </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                       <input className="validate"
                       type="password"
                       name="password"
@@ -129,7 +129,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="text"
                       name="firstname"
@@ -137,9 +137,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="firstname">First Name</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="text"
                       name="lastname"
@@ -149,7 +147,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="email"
                       name="email"
@@ -157,9 +155,8 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="email">Email</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                
+                    <div className="input-field col s3">
                       <input className="validate"
                       type="text"
                       name="mobile"
@@ -167,9 +164,8 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="mobile">Mobile Number</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                
+                    <div className="input-field col s3">
                       <input className="validate"
                       type="text"
                       name="landline"
@@ -179,7 +175,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s6">
                       <input className="validate"
                        type="text"
                       name="address"
@@ -187,9 +183,8 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="address">Address</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                
+                    <div className="input-field col s6">
                       <input className="validate"
                        type="text"
                       name="city"
@@ -197,9 +192,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="city">City</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s4">
                       <input className="validate"
                       type="text"
                       name="state"
@@ -207,9 +200,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="state">State</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s2">
                       <input className="validate"
                        type="text"
                       name="zip"
@@ -217,9 +208,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="state">Zip</label>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s2">
                       <input className="validate"
                       type="text"
                       name="country"
@@ -239,7 +228,7 @@ class Signup extends Component {
                           onClick={this.handleSubmit}>Sign Up
                             <i className="material-icons right">send</i>
                         </button>
-                        </div>
+                      </div>
                   </div>
                 </form>
               </div>
