@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 const TaskSchema = new Schema({
   timeStamp: { type: Date, default: Date.now },
   shiftID: { type: Number, required: true },
-  userID:  { type: Number, required: true },
-  taskTypeID: { type: Number, required: true },
-  score: { type: Number, required: true },
-  note: { type: String, required: false }
+  clientID: {type: Number, required: true},
+  clientName: {type:String, required: true},
+  taskName: { type: Number, required: true },
+  score: { type: Number, required: true }
 });
 
 const Task = mongoose.model("Task", TaskSchema);

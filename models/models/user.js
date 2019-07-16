@@ -11,7 +11,6 @@ const userSchema = new Schema({
 	firstname: {type: String, unique: false, required:true},
 	lastname: {type: String, unique: false, required:true},
 	role: {type: String, unique: false, required:true}, 
-	email: {type: String, unique: true, required:true},
 	mobile: {type: String, unique: true, required:true},
 	address: {type: String, unique: false, required:true},
 	city: {type: String, unique: false, required:true},

@@ -54,7 +54,7 @@ class CreateClient extends Component {
             city: this.state.city,
             zip: this.state.zip,
             clientID: this.state.clientID,
-            userID: this.state.clientID
+            userID: this.state.userID
 		})
 			.then(response => {
 				console.log(response)
