@@ -19,17 +19,15 @@ router.post('/', (req, res) => {
         else {
             const newUser = new User({
                 password: password,
-                firstname: firstname,
-                lastname: lastname,
-                role: role,
-                email: email,
-                mobile: mobile,
-                landline: landline,
-                address: address,
-                city: city,
-                zip: zip,
-                country: country,
-                clientID: clientID
+                firstname: req.user.firstname,
+                lastname: req.user.lastname,
+                role: req.user.role,
+                mobile: req.user.mobile,
+                address: req.user.address,
+                city: req.user.city,
+                state: req.user.state,
+                zip: req.user.zip,
+                clientID: req.user.clientID
             })
             newUser.save((err, savedUser) => {
                 if (err) return res.json(err)
@@ -55,13 +53,11 @@ router.post(
             firstname: req.user.firstname,
             lastname: req.user.lastname,
             role: req.user.role,
-            email: req.user.email,
             mobile: req.user.mobile,
-            landline: req.user.landline,
-            address: requ.user.address,
+            address: req.user.address,
             city: req.user.city,
+            state: req.user.state,
             zip: req.user.zip,
-            country: req.user.country,
             clientID: req.user.clientID
         };
         res.send(userInfo);

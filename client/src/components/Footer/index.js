@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 // import Github from './assets/images/github.png';
 
@@ -64,7 +64,7 @@ export function Footer(props) {
             <div className="footer-copyright">
               <div className="container">
               © 2019 Copyright
-              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank">Github Repo </a>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank" rel="noopener noreferrer">Github Repo </a>
 
               </div>
             </div>

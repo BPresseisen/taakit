@@ -13,12 +13,10 @@ const userSchema = new Schema({
 	role: {type: String, unique: false, required:true}, 
 	email: {type: String, unique: true, required:true},
 	mobile: {type: String, unique: true, required:true},
-	landline: {type: String, unique: true, required:false},
 	address: {type: String, unique: false, required:true},
 	city: {type: String, unique: false, required:true},
 	state: {type: String, unique: false, required:true},
 	zip: {type: String, unique: false, required:true},
-	country: {type: String, unique: false, required:true},
 	clientID: {type: Array, unique: false, required: false}
 
 })
