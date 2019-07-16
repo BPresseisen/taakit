@@ -17,22 +17,28 @@ router.post('/', (req, res) => {
             })
         }
         else {
+            console.log(req.body);
             const newUser = new User({
+                username: username,
                 password: password,
-                firstname: firstname,
-                lastname: lastname,
-                role: role,
-                email: email,
-                mobile: mobile,
-                landline: landline,
-                address: address,
-                city: city,
-                zip: zip,
-                country: country,
-                clientID: clientID
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                role: req.body.role,
+                email: req.body.email,
+                mobile: req.body.mobile,
+                landline: req.body.landline,
+                address: req.body.address,
+                city: req.body.city,
+                state: req.body.state,
+                zip: req.body.zip,
+                country: req.body.country,
+                clientID: req.body.clientID
             })
             newUser.save((err, savedUser) => {
-                if (err) return res.json(err)
+                if (err) {
+                    console.log(err);
+                    return res.json(err)
+                }
                 res.json(savedUser)
             })
         }
@@ -51,15 +57,15 @@ router.post(
         console.log('logged in', req.user);
         var userInfo = {
             username: req.user.username,
-            username: req.user.username,
             firstname: req.user.firstname,
             lastname: req.user.lastname,
             role: req.user.role,
             email: req.user.email,
             mobile: req.user.mobile,
             landline: req.user.landline,
-            address: requ.user.address,
+            address: req.user.address,
             city: req.user.city,
+            state: req.user.state,
             zip: req.user.zip,
             country: req.user.country,
             clientID: req.user.clientID

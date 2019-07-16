@@ -73,7 +73,6 @@ class App extends Component {
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
           <Route path="/contact" component={Contact}/> 
-          <Route path="/summary" component={Summary}/> 
           <Route path="/tasks" component={TasksPage}/>
           <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>
