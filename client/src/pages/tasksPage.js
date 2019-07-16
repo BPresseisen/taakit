@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Slim, Med } from '../components/Grid';
+import { Med } from '../components/Grid';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { 

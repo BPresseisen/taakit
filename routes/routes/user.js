@@ -60,14 +60,12 @@ router.post(
             firstname: req.user.firstname,
             lastname: req.user.lastname,
             role: req.user.role,
-            email: req.user.email,
             mobile: req.user.mobile,
             landline: req.user.landline,
             address: req.user.address,
             city: req.user.city,
             state: req.user.state,
             zip: req.user.zip,
-            country: req.user.country,
             clientID: req.user.clientID
         };
         res.send(userInfo);

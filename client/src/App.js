@@ -9,7 +9,6 @@ import LoginForm from './pages/loginPage';
 import Navbar from './layout/navbar';
 import About from './pages/aboutPage';
 import Contact from './pages/contactPage';
-import Summary from './pages/summaryPage';
 import DashboardPage from './pages/dashboardPage';
 import TasksPage from './pages/tasksPage';
 import VitalsPage from './pages/vitalsPage';

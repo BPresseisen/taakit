@@ -4,6 +4,7 @@ import {  } from '../components/User';
 import { ShiftChip, AddClient, ClientChip, SearchForm } from '../components/Clients';
 import "materialize-css/dist/css/materialize.min.css";
 import "./style.css";
+import LoggedIn from '../layout/loggedIn';
 
 class DashboardPage extends Component {
     render() {
@@ -11,7 +12,7 @@ class DashboardPage extends Component {
             <Fragment>
                 <div className="container">
                     <div className="row flex center">
-                 
+                    <LoggedIn/>
                         <div className="col s12 l6 center card pad">
                             <div className="col s12">
                                 <h4>Clients</h4>

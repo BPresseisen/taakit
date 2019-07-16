@@ -15,7 +15,7 @@ export function ShiftCard(props) {
                         <div className="card-action">
                         <a href="/clientPage" className="white-text">Client Details &raquo;</a>
                         <a href="/shift" className="white-text">Shift Details &raquo;</a>
-                        <a href="vitals" class="waves-effect waves-light btn grey lighten-2 black-text"><i class="material-icons right">done</i>End Shift</a>
+                        <a href="/" class="waves-effect waves-light btn grey lighten-2 black-text"><i class="material-icons right">done</i>End Shift</a>
                     </div>
                 </div>
             </div>

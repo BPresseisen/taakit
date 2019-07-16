@@ -1,8 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 import axios from 'axios';
-import LoggedIn from '../layout/loggedIn';
 import "./style.css";
 
 
@@ -61,14 +60,12 @@ class Navbar extends Component {
     }
 
     render() {
-        const loggedIn = this.props.loggedIn;
-        console.log('navbar render, props: ')
-        console.log(this.props);
+        
         return (
         <header>
             <div className="navbar-fixed ">
                 <ul id="dropdown1" className="dropdown-content nav-width">
-                  <li><a href="#">&nbsp;</a></li>
+                  <li><a href="#!">&nbsp;</a></li>
                   <li className="divider"></li>
                   <li><a href="/">My Account</a></li>
                   <li><a href="/home" onClick={this.logout}>Logout</a></li>
@@ -76,7 +73,7 @@ class Navbar extends Component {
                 <nav>
                     <div className="nav-wrapper">
                         <a href="/" className="brand-logo center">Taakit</a>
-                        <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                        <a href="#!" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down ">
                         <li className="nav-width"><a className="dropdown-trigger" href="/" data-target="dropdown1">My Account<i className="material-icons right">arrow_drop_down</i></a></li>
                         </ul>
@@ -86,7 +83,7 @@ class Navbar extends Component {
 
             <ul className="sidenav red lighten-2" id="slide-out">
                 <li> 
-                    <a href="/" className="navText">
+                    <a href="/!" className="navText">
                     My Account
                     </a>
                     </li>
