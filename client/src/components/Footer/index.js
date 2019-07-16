@@ -17,12 +17,12 @@ export function Footer(props) {
                   <h5 className="white-text">Site Map</h5>
                   <ul>
                   <li>
-                      <Link to="/">
-                      <div className="grey-text text-lighten-3">Home</div>
+                      <Link to="/dashboard">
+                      <div className="grey-text text-lighten-3">Dashboard</div>
                       </Link>
                       </li>
                       <li>
-                      <Link to="/login">
+                      <Link to="/">
                       <div className="grey-text text-lighten-3">Login</div>
                       </Link>
                       </li>

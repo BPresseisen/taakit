@@ -100,13 +100,17 @@ render() {
                       onClick={this.handleSubmit}>Sign In
                           <i className="material-icons right">send</i>
                       </button>
-                      </div>
+                    </div>
                 </div>
-           
-          
+                <div className="row">
+                  <div className="col s12 l6 offset-l3">
+                      Sign up <a href="/signup">here</a>.
+                  </div>
+                </div>
               </form>
             </div>
-                      </div>
+           </div>
+           
         )
       }
     }
