@@ -110,7 +110,7 @@ class Signup extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="input-field col s12 l6 offset-l3">
+                    <div className="input-field col s12">
                     <select multiple onChange={this.handleChange} name="role" value={this.state.role}>
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">Caregiver (Family or Friend)</option>

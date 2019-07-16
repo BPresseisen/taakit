@@ -81,7 +81,7 @@ render() {
                      name="username"
                      value={this.state.username}
                      onChange={this.handleChange}/>
-                    <label for="email">Email</label>
+                    <label forHTML="email">Email</label>
                   </div>
                 </div>
                 <div className="row">
@@ -91,22 +91,26 @@ render() {
                      name="password"
                      value={this.state.password}
                      onChange={this.handleChange}/>
-                    <label for="password">Password</label>
+                    <label forHTML="password">Password</label>
                   </div>
                 </div>
                 <div className="row">
-                      <div className="col s12 l6 offset-l3">
+                    <div className="col s12 l6 offset-l3">
                       <button class="btn waves-effect waves-light" type="submit" name="action"
                       onClick={this.handleSubmit}>Sign In
-                          <i class="material-icons right">send</i>
+                          <i className="material-icons right">send</i>
                       </button>
-                      </div>
+                    </div>
                 </div>
-           
-          
+                <div className="row">
+                  <div className="col s12 l6 offset-l3">
+                      Sign up <a href="/signup">here</a>.
+                  </div>
+                </div>
               </form>
             </div>
-                      </div>
+           </div>
+           
         )
       }
     }

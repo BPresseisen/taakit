@@ -66,9 +66,10 @@ class App extends Component {
       <Fragment>
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
          <main>
-        <Switch>
-          <Route exact path="/" component={DashboardPage} />
-          <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
+          <Switch>
+          <Route exact path="/" component={LoginForm} updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+          <Route exact path="/dashboard" component={DashboardPage} />
+          {/* <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} /> */}
           <Route path="/signup" render={() => <Signup/>}/>
           <Route path="/about" component={About}/> 
           <Route path="/contact" component={Contact}/> 

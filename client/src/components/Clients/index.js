@@ -4,11 +4,11 @@ import "./style.css";
 
 export function ClientProfile(props) {
     return (
-        <div class="collection ">
-        <a href="#!" class="collection-item active indigo darken-1">Gene Grogan</a>
-        <a href="#!" class="collection-item indigo-text darken-1">Address</a>
-        <a href="#!" class="collection-item indigo-text darken-1">Number</a>
-        <a href="#!" class="collection-item indigo-text darken-1">Field</a>
+        <div className="collection ">
+        <a href="#!" className="collection-item active indigo darken-1">Gene Grogan</a>
+        <a href="#!" className="collection-item indigo-text darken-1">Address</a>
+        <a href="#!" className="collection-item indigo-text darken-1">Number</a>
+        <a href="#!" className="collection-item indigo-text darken-1">Field</a>
       </div>
     )
 }
