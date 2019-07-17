@@ -1,0 +1,53 @@
+.profile-img img {
+    border-radius: 250px;
+    background: #ffffff !important;
+}
+.profile-img img:hover {
+    background: #e57373 !important;
+}
+
+.profile-img {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      filter: drop-shadow(5px 15px 5px black);
+      transform: translateY(0px);
+    }
+    50% {
+      filter: drop-shadow(25px 30px 15px black);
+      transform: translateY(-10px);
+    }
+    100% {
+      filter: drop-shadow(5px 15px 5px black);
+      transform: translateY(0px);
+    }
+}
+
+
+.icon-img img {
+    border-radius: 250px;
+}
+.icon-img img:hover {
+    background: #e57373 !important;
+}
+
+/* .icon-img:hover {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      filter: drop-shadow(5px 10px 5px black);
+      transform: translateY(0px);
+    }
+    50% {
+      filter: drop-shadow(25px 20px 15px black);
+      transform: translateY(-10px);
+    }
+    100% {
+      filter: drop-shadow(5px 15px 5px black);
+      transform: translateY(0px);
+    }
+} */

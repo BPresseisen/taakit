@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-// import Github from './assets/images/github.png';
+import Github from './github.png';
 
 
 export function Footer(props) {
@@ -37,11 +37,6 @@ export function Footer(props) {
                       </Link>
                       </li>
                       <li>
-                      <Link to="/vitals">
-                      <div className="grey-text text-lighten-3">Vitals</div>
-                      </Link>
-                      </li>
-                      <li>
                       <Link to="/shift">
                       <div className="grey-text text-lighten-3">Shifts</div>
                       </Link>
@@ -64,7 +59,7 @@ export function Footer(props) {
             <div className="footer-copyright">
               <div className="container">
               © 2019 Copyright
-              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank" rel="noopener noreferrer">Github Repo </a>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/BPresseisen/test" target="_blank" rel="noopener noreferrer">Github Repo <img src={Github} alt="Github" className="githublogo"/> </a>
 
               </div>
             </div>

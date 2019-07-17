@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import axios from 'axios';
@@ -104,7 +104,7 @@ render() {
                 </div>
                 <div className="row">
                   <div className="col s12 l6 offset-l3">
-                      Sign up <a href="/signup">here</a>.
+                      Sign up <Link to="/signup">here</Link>.
                   </div>
                 </div>
               </form>
