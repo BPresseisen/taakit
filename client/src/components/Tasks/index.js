@@ -1,28 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "./style.css";
 
-export function ShiftCard(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: 12345</span>
-                        <p>Careperson: Dr. Quinn</p>
-                        <p>Client: Gene Grogan</p>
-                        <p>Date: 7/11/2019</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <Link to="/shift" className="white-text">Shift Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
+
 
 export function Input(props) {
     return (

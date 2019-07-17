@@ -2,11 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
 
-
-
-
-var shiftid = {
-    s01: {fullName: "Gene Grogan", clientID: "C00001", userID: "", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
+var shift = {
+    s01: {fullName: "Gene Grogan", clientID: "C00001", userID: "Sean Munley", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
     s02: {fullName: "Gene Grogan", clientID: "C00001", userID: "", startTime: "07/11/2019 18:00:00", endTime: "07/12/2019 00:00:00"},
     s03: {fullName: "Gene Grogan", clientID: "C00001", userID: "", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
     s04: {fullName: "Gail Lefebre", clientID: "C00004", userID: "", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
@@ -23,10 +20,10 @@ var shiftid = {
             <div className="col s12">
                 <div className="card grey darken-2">
                     <div className="card-content white-text">
-                        <span className="card-title">Shift ID: 12345</span>
-                        <p>Careperson: Dr. Quinn</p>
-                        <p>Client: Gene Grogan</p>
-                        <p>Date: 7/11/2019</p>
+                        <span className="card-title">Shift ID: s01</span>
+                        <p>Careperson: {shift.s01.userID}</p>
+                        <p>Client: {shift.s01.fullName}</p>
+                        <p>Date: {shift.s01.endTime}</p>
                         </div>
                         <div className="card-action">
                         <Link to="/client" className="white-text">Client Details &raquo;</Link>
