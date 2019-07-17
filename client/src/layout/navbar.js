@@ -68,7 +68,7 @@ class Navbar extends Component {
                   <li><a href="#!">&nbsp;</a></li>
                   <li className="divider"></li>
                   <li><a href="/dashboard">My Account</a></li>
-                  <li><a href="/home" onClick={this.logout}>Logout</a></li>
+                  <li><a href="/!" onClick={this.logout}>Logout</a></li>
                 </ul>
                 <nav>
                     <div className="nav-wrapper">
@@ -84,11 +84,11 @@ class Navbar extends Component {
             <ul className="sidenav red lighten-2" id="slide-out">
                 <li> 
                     <a href="/dashboard" className="navText">
-                    My Account
+                         My Account
                     </a>
                     </li>
                     <li>
-                    <a href="/home!" className="navText" onClick={this.logout}>Logout</a>
+                    <a href="/!" className="navText" onClick={this.logout}>Logout</a>
                 </li>
             </ul>
         </header>
