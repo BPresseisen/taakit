@@ -16,6 +16,7 @@ const userSchema = new Schema({
 	city: {type: String, unique: false, required:true},
 	state: {type: String, unique: false, required:true},
 	zip: {type: String, unique: false, required:true},
+	country: {type: String, unique:false,required:true},
 	clientID: {type: Array, unique: false, required: false}
 
 })

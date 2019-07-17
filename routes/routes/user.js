@@ -63,6 +63,7 @@ router.post(
             city: req.user.city,
             state: req.user.state,
             zip: req.user.zip,
+            country: req.user.country,
             clientID: req.user.clientID
         };
         res.send(userInfo);

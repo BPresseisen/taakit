@@ -19,6 +19,7 @@ class Signup extends Component {
       city: '',
       state: '',
       zip: '',
+      country: '',
       clientID: '',
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
@@ -40,6 +41,7 @@ class Signup extends Component {
     console.log(this.state.city);
     console.log(this.state.state);
     console.log(this.state.zip);
+    console.log(this.state.country);
     console.log(this.state.clientID);
 		event.preventDefault()
 
@@ -55,6 +57,7 @@ class Signup extends Component {
       city: this.state.city,
       state: this.state.state,
       zip: this.state.zip,
+      country:this.state.country,
       clientID: this.state.clientID
 		})
 			.then(response => {
@@ -127,6 +130,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="firstname">First Name</label>
                     </div>
+
                     <div className="input-field col s6">
                       <input className="validate"
                       type="text"
@@ -155,6 +159,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="city">City</label>
                     </div>
+
                     <div className="input-field col s5">
                       <input className="validate"
                       type="text"
@@ -163,6 +168,7 @@ class Signup extends Component {
                       onChange={this.handleChange}/>
                       <label htmlFor="state">State</label>
                     </div>
+
                     <div className="input-field col s2">
                       <input className="validate"
                        type="text"
@@ -172,21 +178,25 @@ class Signup extends Component {
                       <label htmlFor="state">Zip</label>                     
                     </div>
 
+                    <div className="input-field col s2">
+                      <input className="validate"
+                       type="text"
+                      name="country"
+                      value={this.state.country}
+                      onChange={this.handleChange}/>
+                      <label htmlFor="state">Country</label>                     
+                    </div>
+
                     <div className="input-field col s5">
                       <input className="validate"
                       type="text"
                       name="mobile"
                       value={this.state.mobile}
                       onChange={this.handleChange}/>
-                      <label htmlFor="mobile">Mobile Number</label>
-
-                      <input className="validate"
-                       type="hidden"
-                      name="clientID"
-                      value="007"
-                      />
+                      <label htmlFor="mobile">Mobile Phone</label>
                     </div>       
                   </div>
+                  
                   <div className="row">
                         <div className="col s12 l6 offset-l3">
                           <button className="btn waves-effect waves-light" type="submit" name="action"

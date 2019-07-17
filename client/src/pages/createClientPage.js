@@ -17,7 +17,7 @@ class CreateClient extends Component {
             city: '',
             state: '',
             zip: '',
-            clientID: '',
+            country: '',
             userID: ''
 
 		}
@@ -30,42 +30,42 @@ class CreateClient extends Component {
 		})
 	}
 	handleSubmit(event) {
-		console.log('sign-up handleSubmit, form capture: ')
-                console.log(this.state.firstname);
-                console.log(this.state.lastname);
-                console.log(this.state.role);
-                console.log(this.state.email);
-                console.log(this.state.mobile);
-                console.log(this.state.address);
-                console.log(this.state.city);
-                console.log(this.state.state);
-                console.log(this.state.zip);
-                console.log(this.state.clientID);
+		console.log('createClient handleSubmit, form capture: ')
+        console.log(this.state.firstname);
+        console.log(this.state.lastname);
+        console.log(this.state.email);
+        console.log(this.state.mobile);
+        console.log(this.state.address);
+        console.log(this.state.city);
+        console.log(this.state.state);
+        console.log(this.state.zip);
+        console.log(this.state.country);
+        console.log(this.state.clientID);
 		event.preventDefault()
 
-		//request to server to *add a new username/password* add new data
-		axios.post('/client/', {
+		//request to server to *add a new client to client colleciton
+		axios.post('/client', {
             firstname: this.state.firstname,
             lastname: this.state.lastname,
-            role: this.state.role,
             email: this.state.email,
             mobile: this.state.mobile,
             address: this.state.address,
             city: this.state.city,
             zip: this.state.zip,
-            clientID: this.state.clientID,
-            userID: this.state.userID
+            country: this.state.country,
+            clientID: this.state.clientID
 		})
 			.then(response => {
 				console.log(response)
 				if (!response.data.errmsg) {
-					console.log('successful signup')
+					console.log('successful client add')
 					this.setState({ //redirect to login page
-						redirectTo: '/dashboardPage'
+						redirectTo: '/dashboard'
 					})
 				} else {
-					console.log('username already taken')
-				}
+					console.log('client already in Taakit')
+                    //NEED TO ADD VALIDATION FOR CHECKING EXISITNG CLIENTS
+                }
 			}).catch(error => {
 				console.log('signup error: ')
 				console.log(error)
@@ -119,7 +119,7 @@ class CreateClient extends Component {
                                 name="mobile"
                                 value={this.state.mobile}
                                 onChange={this.handleChange}/>
-                                <label htmlFor="mobile">Phone Number</label>
+                                <label htmlFor="mobile">Mobile Phone</label>
                             </div>
                         
                             <div className="input-field col s6">
@@ -153,6 +153,14 @@ class CreateClient extends Component {
                                 value={this.state.zip}
                                 onChange={this.handleChange}/>
                                 <label htmlFor="state">Zip</label>
+                            </div>
+                            <div className="input-field col s2">
+                                <input className="validate"
+                                type="text"
+                                name="country"
+                                value={this.state.country}
+                                onChange={this.handleChange}/>
+                                <label htmlFor="state">Country</label>
                             </div>
                         </div>
                         <div className="row">
