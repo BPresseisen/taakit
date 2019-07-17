@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import {  } from '../components/User';
-import { ShiftChip, AddClient, ClientChip } from '../components/Clients';
+import { ShiftChip, ClientChip } from '../components/Clients';
 import "materialize-css/dist/css/materialize.min.css";
 import "./style.css";
 import LoggedIn from '../layout/loggedIn';
