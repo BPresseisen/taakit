@@ -42,7 +42,6 @@ export function SubmittedTaskTitle(props) {
                 </div>
                 <div className="task-id">
                     Task ID: {props.taskID}<br/>
-                    Logged: {props.timeStamp}
                 </div>
         </div>
     );
@@ -65,20 +64,8 @@ export function SubmittedTaskExpand(props) {
                     <li><span className="teal-text">Patient Name:</span> {task.fullName}</li>
                     <li><span className="teal-text">Score:</span>  {task.score}</li>
                     <li><span className="teal-text">Time Logged:</span>  {task.timeStamp}</li>
-                    <li><span className="teal-text">Notes:</span>  {task.notes}</li>
                 </ul>
-                <div className="row">
-                    <form className="col s12">
-                    <div className="row">
-                        <div className="input-field col s12">
-                        <i className="material-icons prefix teal-text">chat</i>
-                        <textarea id="icon_prefix2" className="materialize-textarea"></textarea>
-                        <label forHTML="icon_prefix2">Notes about the taakit task</label>
-                        </div>
-                    </div>
-                    <NotesButton/>
-                    </form>
-                </div>
+                
         </div>
     );
 }
