@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Client = require('../../models/models/client')
 
-router.post('/', (req, res) => {
+router.post('/client', (req, res) => {
     console.log('client signup');
 
     
@@ -27,3 +27,5 @@ router.post('/', (req, res) => {
                 res.json(savedClient)
             })
         })
+
+module.exports = router

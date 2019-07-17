@@ -15,7 +15,7 @@ import VitalsPage from './pages/vitalsPage';
 import ShiftPage from './pages/shiftPage';
 import { Footer } from './components/Footer';
 import ClientPage from './pages/clientPage';
-import CreateClient from './pages/createClient';
+import CreateClient from './pages/createClientPage';
 import Error from './pages/errorPage';
 
 class App extends Component {

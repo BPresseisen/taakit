@@ -12,7 +12,7 @@ class LoginForm extends Component {
     this.state = {
         username: '',
         password: '',
-        redirectTo: null
+        redirectTo: false
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -39,14 +39,15 @@ handleSubmit(event) {
             console.log(response)
             if (response.status === 200) {
                 // update App.js state
-                this.props.updateUser({
-                    loggedIn: true,
-                    username: response.data.username
-                })
+                // this.props.updateUser({
+                //   this.state.updateUser({
+                //     loggedIn: true,
+                //     username: response.data.username
+                // })
                 // update the state to redirect to home
                 this.setState({
-                    redirectTo: '/'
-                })
+                    redirectTo: true
+                }, ()=> console.log(this.state.redirectTo))
             }
         }).catch(error => {
             console.log('login error: ')
@@ -60,9 +61,9 @@ componentDidMount() {
 }
 
 render() {
-  if (this.state.redirectTo) {
-      return <Redirect to={{ pathname: this.state.redirectTo }} />
-  } else {
+  if (this.state.redirectTo===true) {
+      return <Redirect to="/dashboard" />
+  }
       return (
             <div className="container">
             <div className="row">
@@ -114,5 +115,4 @@ render() {
         )
       }
     }
-}
 export default LoginForm
