@@ -21,8 +21,7 @@ class Contact extends Component {
                <BenP/>
                 <SeanM/>
                </div>
-
-               <div className="row">
+               <div className="row" id="about" name="about">
                     <div className="col s12 center formTitle">
                         Our Story
                     </div>
@@ -48,4 +47,4 @@ class Contact extends Component {
         )
     }
 }
-export default Contact
+export default Contact;
