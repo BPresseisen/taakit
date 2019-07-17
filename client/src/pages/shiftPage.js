@@ -18,6 +18,11 @@ class ShiftPage extends Component {
 
         return (
             <Fragment>
+                <div className="row">
+                        <div className="col s12  center formTitle">
+                            Shift
+                        </div>
+                    </div>
             <Med>
                <ShiftCard/>
             </Med>
