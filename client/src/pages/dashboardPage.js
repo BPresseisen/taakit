@@ -11,17 +11,22 @@ class DashboardPage extends Component {
         return (
             <Fragment>
                 <div className="container">
+                   <div className="row">
+                        <div className="col s12  center formTitle">
+                            Dashboard
+                        </div>
+                    </div>
                     <div className="row flex center">
                     <LoggedIn/>
                         <div className="col s12 l6 center card pad">
                             <div className="col s12">
                                 <h4>Clients</h4>
-                                <div className="col s6">
+                                <div className="col s12 m6">
                                     <Link to="/createclient">
                                         <AddClient/>
                                     </Link>
                                 </div>
-                                <div className="col s6">
+                                <div className="col s12 m6">
                                     <SearchForm/>
                                 </div>
                              <div>
