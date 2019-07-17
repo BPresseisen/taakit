@@ -20,7 +20,7 @@ class ShiftPage extends Component {
             <Fragment>
                 <div className="row">
                         <div className="col s12  center formTitle">
-                            Shift
+                            Shift Detail
                         </div>
                     </div>
             <Med>

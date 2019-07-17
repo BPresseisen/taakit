@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { ShiftChip, ClientChip } from '../components/Clients';
 import "materialize-css/dist/css/materialize.min.css";
-import "./style.css";
 import LoggedIn from '../layout/loggedIn';
 
 class DashboardPage extends Component {
@@ -11,7 +10,7 @@ class DashboardPage extends Component {
                 <div className="container">
                    <div className="row">
                         <div className="col s12  center formTitle">
-                            Dashboard
+                            Your Dashboard
                         </div>
                     </div>
                     <div className="row flex center">

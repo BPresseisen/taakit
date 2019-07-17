@@ -18,10 +18,10 @@ var patient = {
 export function ClientProfile(props) {
     return (
         <div className="collection ">
-        <a href="#!" className="collection-item active indigo darken-1"> {patient.Gene.fullName}</a>
-        <a href="https://google.com/maps/place/{patient.Gene.address}" target="_blank" rel="noopener noreferrer" className="collection-item indigo-text darken-1"> {patient.Gene.address}</a>
-        <a href="mailto:{patient.Gene.email}" className="collection-item indigo-text darken-1"> {patient.Gene.email}</a>
-        <a href="tel:{patient.Gene.phone}" className="collection-item indigo-text darken-1"> {patient.Gene.phone}</a>
+        <a href="#!" className="collection-item active teal"> {patient.Gene.fullName}</a>
+        <a href="https://google.com/maps/place/{patient.Gene.address}" target="_blank" rel="noopener noreferrer" className="collection-item teal-text"> {patient.Gene.address}</a>
+        <a href="mailto:{patient.Gene.email}" className="collection-item teal-text"> {patient.Gene.email}</a>
+        <a href="tel:{patient.Gene.phone}" className="collection-item teal-text"> {patient.Gene.phone}</a>
       </div>
     )
 }
@@ -68,7 +68,7 @@ export function ClientChip(props) {
  
   return (
       <Link to="/client">
-       <div className="chip indigo darken-1 white-text ">
+       <div className="chip teal white-text ">
            <i className="tiny material-icons">folder_shared</i> &nbsp;
          {patient.Gene.fullName}
            <i className="close material-icons">add_circle_outline</i>
