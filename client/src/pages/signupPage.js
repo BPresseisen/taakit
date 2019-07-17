@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect, Link } from 'react-router-dom';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
     
@@ -21,6 +22,7 @@ class Signup extends Component {
       zip: '',
       country: '',
       clientID: '',
+      redirectTo: false
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
 		this.handleChange = this.handleChange.bind(this)
@@ -64,8 +66,9 @@ class Signup extends Component {
 				console.log(response)
 				if (!response.data.errmsg) {
 					console.log('successful signup')
-					this.setState({ //redirect to login page
-						redirectTo: '/dashboardPage'
+					this.setState({ 
+            //for redirect to login page
+            redirectTo: true
 					})
 				} else {
 					console.log('username already taken')
@@ -80,6 +83,9 @@ class Signup extends Component {
     M.AutoInit();
 }
     render() {
+        if (this.state.redirectTo===true) {
+          return <Redirect to="/" />
+        }
         return (
             <div className="container">
               <div className="row">
