@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./style.css";
 
 export function ShiftCard(props) {
@@ -13,9 +14,9 @@ export function ShiftCard(props) {
                         <p>Date: 7/11/2019</p>
                         </div>
                         <div className="card-action">
-                        <a href="/client" className="white-text">Client Details &raquo;</a>
-                        <a href="/shift" className="white-text">Shift Details &raquo;</a>
-                        <a href="/dashboard" class="waves-effect waves-light btn grey lighten-2 black-text"><i class="material-icons right">done</i>End Shift</a>
+                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
+                        <Link to="/shift" className="white-text">Shift Details &raquo;</Link>
+                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
                     </div>
                 </div>
             </div>

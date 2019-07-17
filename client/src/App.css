@@ -40,10 +40,15 @@ main {
   font-style:normal;font-weight:400;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+    color: #555555;
+  }
+
+
   .brand-logo {
     font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
     font-size: 50px !important;
-    margin-left: 25px;
   }         
 #signupForm, #profileForm, #signinForm, #roleForm {
   justify-content: center;

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import {  } from '../components/User';
-import { ShiftChip, AddClient, ClientChip, SearchForm } from '../components/Clients';
+import { ShiftChip, AddClient, ClientChip } from '../components/Clients';
 import "materialize-css/dist/css/materialize.min.css";
 import "./style.css";
 import LoggedIn from '../layout/loggedIn';
@@ -19,22 +19,17 @@ class DashboardPage extends Component {
                     <div className="row flex center">
                     <LoggedIn/>
                         <div className="col s12 l6 center card pad">
-                            <div className="col s12">
+                            {/* <div className="col s12">
                                 <h4>Clients</h4>
-                                <div className="col s12 m6">
+                                <div className="col s12">
                                     <Link to="/createclient">
                                         <AddClient/>
                                     </Link>
                                 </div>
-                                <div className="col s12 m6">
-                                    <SearchForm/>
-                                </div>
-                             <div>
-
-                             </div>
-                            </div>
+                            </div> */}
                             <div className="col s12">
-                                <h4>Your Clients </h4>
+                                <h5>Your Clients </h5>
+                                <br/>
                                 <ClientChip/>
                                 <ClientChip/>
                                 <ClientChip/>
@@ -46,7 +41,7 @@ class DashboardPage extends Component {
                         </div>
                       
                         <div className="col s12 l6 center card pad">
-                        <h4>Recent Shifts</h4>
+                        <h5>Recent Shifts</h5>
                             <br/>
                             <div>
                             <ShiftChip/><ShiftChip/><ShiftChip/><ShiftChip/>
