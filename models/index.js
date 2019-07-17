@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/simple-mern-passport';
+const uri = process.env.MONGODB_URI || 'mongodb://resu:resuuser2019@ds345587.mlab.com:45587/heroku_tfm9bttk';
 //your local database url
 //27017 is the default mongoDB port
 // const uri = 'mongodb://localhost:27017/simple-mern-passport' 
