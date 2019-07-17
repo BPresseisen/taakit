@@ -14,6 +14,11 @@ class ClientPage extends Component {
     render() {
         return (
             <Fragment>
+                <div className="row">
+                        <div className="col s12  center formTitle">
+                            Client Page
+                        </div>
+                    </div>
                 <Med>
                     <ClientProfile/>
                 </Med>

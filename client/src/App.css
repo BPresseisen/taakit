@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #555555;
 }
 
 code {
@@ -44,7 +46,9 @@ main {
     font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
     color: #555555;
   }
-
+  .taakit {
+    font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+  }    
 
   .brand-logo {
     font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;

@@ -28,8 +28,19 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12 center">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    <div className="col s12 m10 offset-m1 align-left">
+
+                    Welcome to <span className="taakit">Taakit</span>, a solution for the future of in home assisted care. <br/><br/>
+                    
+                    <b></b>Why we created <span className="taakit">Taakit</span>?
+                    <br/><br/>
+                     There are approximately 80MM baby boomers (born between 1946 and 1965). As these boomers age, many will require aided care to live their lives as independently as possible and to live with the dignity of remaining in their own home. Taking care of loved ones who need aided care is difficult in and of itself. With <span className="taakit">Taakit</span> those who are tasked with such responsibilities can benefit from a platform that maps and manages everything which needs doing and monitoring.
+                     <br/><br/>
+                    Loved ones receive the care they need and in real-time these tasks are planned, charted, and communicated as they are delivered.
+                    <br/><br/>
+                    Real time data in the cloud empowers, enables and educates a multitude of people who may fulfill the caregiving role whether they are an at-home aide, nurse practitioner or from among concerned family and friends. 
+                    <br/><br/>
+                    The <span className="taakit">Taakit</span> platform is mobile friendly and reduces waste, miscommunications, burdensome duplicate and triplicate paperwork and the manual errors that underlie existing systems, inefficiencies and procedures used by caregivers.
                     </div>
                 </div>
                 
