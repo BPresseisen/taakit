@@ -36,7 +36,7 @@ class TasksPage extends Component {
            <Fragment>
                <div className="row">
                         <div className="col s12  center formTitle">
-                            Tasks
+                            Log Tasks
                         </div>
                     </div>
                <Med>

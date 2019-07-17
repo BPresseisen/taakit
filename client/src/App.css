@@ -83,6 +83,11 @@ a:hover {
   color: ffffff; 
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 990px) {
   .brand-logo {
     margin: 0 !important;
