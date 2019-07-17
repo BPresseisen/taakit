@@ -67,7 +67,7 @@ class Navbar extends Component {
                 <ul id="dropdown1" className="dropdown-content nav-width">
                   <li><a href="#!">&nbsp;</a></li>
                   <li className="divider"></li>
-                  <li><a href="/">My Account</a></li>
+                  <li><a href="/dashboard">My Account</a></li>
                   <li><a href="/home" onClick={this.logout}>Logout</a></li>
                 </ul>
                 <nav>
@@ -75,7 +75,7 @@ class Navbar extends Component {
                         <a href="/" className="brand-logo center">Taakit</a>
                         <a href="#!" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down ">
-                        <li className="nav-width"><a className="dropdown-trigger" href="/" data-target="dropdown1">My Account<i className="material-icons right">arrow_drop_down</i></a></li>
+                        <li className="nav-width"><a className="dropdown-trigger" href="/!" data-target="dropdown1">My Account<i className="material-icons right">arrow_drop_down</i></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -83,7 +83,7 @@ class Navbar extends Component {
 
             <ul className="sidenav red lighten-2" id="slide-out">
                 <li> 
-                    <a href="/!" className="navText">
+                    <a href="/dashboard" className="navText">
                     My Account
                     </a>
                     </li>

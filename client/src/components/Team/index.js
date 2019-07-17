@@ -11,7 +11,7 @@ export function SeanM(props) {
     return (
             <div className="col s12 m6 center">
                 <div className="profile-img">
-                    <img src={Sean} width="250"/>
+                    <img src={Sean} alt={Sean} width="250"/>
                 </div>
                 <div className="profileInfo center">
                     <h4>Sean Munley</h4>
@@ -21,18 +21,18 @@ export function SeanM(props) {
                 </div>
                 <div className="row">
                    <div className="col s4 right-align icon-img">
-                       <a href="mailto:smunley13@gmail.com?subject=WOW!%20We%20are%20impressed&body=We%20want%20to%20hire%20you.%20Here%20is%20our%20offer:" target="_blank">
+                       <a href="mailto:smunley13@gmail.com?subject=WOW!%20We%20are%20impressed&body=We%20want%20to%20hire%20you.%20Here%20is%20our%20offer:" target="_blank" rel="noopener noreferrer">
                        <img  src={Email} alt={Email} width="50"/>
                        </a>
                    </div>
                    <div className="col s4 icon-img">
-                  <a href="https://www.linkedin.com/in/sean-munley/" target="_blank">
-                  <img src={Linkedin} width="50"/>
+                  <a href="https://www.linkedin.com/in/sean-munley/" target="_blank" rel="noopener noreferrer">
+                  <img src={Linkedin} alt={Linkedin} width="50"/>
                   </a>
                    </div>
                    <div className="col s4 left-align icon-img">
-                    <a href="https://github.com/seanmun" target="_blank">
-                        <img src={Github} width="50"/>
+                    <a href="https://github.com/seanmun" target="_blank" rel="noopener noreferrer">
+                        <img src={Github} alt={Github} width="50"/>
                     </a>
                    </div>
                 </div>
@@ -45,7 +45,7 @@ export function BenP(props) {
     return (
             <div className="col s12 m6 center">
                 <div className="profile-img">
-                    <img src={Ben} width="250"/>
+                    <img src={Ben} alt={Ben} width="250"/>
                 </div>
                 <div className="profileInfo center">
                     <h4>Ben Presseisen</h4>
@@ -55,18 +55,18 @@ export function BenP(props) {
                 </div>
                 <div className="row">
                    <div className="col s4 right-align icon-img">
-                       <a href="mailto:benpresseisen@gmail.com?subject=WOW!%20We%20are%20impressed&body=We%20want%20to%20hire%20you.%20Here%20is%20our%20offer:" target="_blank">
+                       <a href="mailto:benpresseisen@gmail.com?subject=WOW!%20We%20are%20impressed&body=We%20want%20to%20hire%20you.%20Here%20is%20our%20offer:" target="_blank" rel="noopener noreferrer">
                        <img src={Email} alt={Email} width="50"/>
                        </a>
                    </div>
                    <div className="col s4 icon-img">
-                  <a href="https://www.linkedin.com/in/benjamin-presseisen-7486445/" target="_blank">
-                  <img src={Linkedin} width="50"/>
+                  <a href="https://www.linkedin.com/in/benjamin-presseisen-7486445/" target="_blank" rel="noopener noreferrer">
+                  <img src={Linkedin} alt={Linkedin} width="50" />
                   </a>
                    </div>
                    <div className="col s4 left-align icon-img">
-                    <a href="https://github.com/BPresseisen" target="_blank">
-                        <img src={Github} width="50"/>
+                    <a href="https://github.com/BPresseisen" target="_blank" rel="noopener noreferrer">
+                        <img src={Github} alt={Github} width="50" />
                     </a>
                    </div>
                 </div>

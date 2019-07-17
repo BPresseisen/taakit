@@ -11,7 +11,6 @@ import About from './pages/aboutPage';
 import Contact from './pages/contactPage';
 import DashboardPage from './pages/dashboardPage';
 import TasksPage from './pages/tasksPage';
-import VitalsPage from './pages/vitalsPage';
 import ShiftPage from './pages/shiftPage';
 import { Footer } from './components/Footer';
 import ClientPage from './pages/clientPage';
@@ -74,7 +73,6 @@ class App extends Component {
           <Route path="/about" component={About}/> 
           <Route path="/contact" component={Contact}/> 
           <Route path="/tasks" component={TasksPage}/>
-          <Route path="/vitals" component={VitalsPage}/>
           <Route path="/shift" component={ShiftPage}/>
           <Route path="/createclient" component={CreateClient}/>
           <Route path="/client" component={ClientPage}/>
