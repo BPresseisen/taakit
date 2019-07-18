@@ -166,7 +166,7 @@ class Signup extends Component {
                       <label htmlFor="city">City</label>
                     </div>
 
-                    <div className="input-field col s5">
+                    <div className="input-field col s6">
                       <input className="validate"
                       type="text"
                       name="state"
@@ -175,7 +175,7 @@ class Signup extends Component {
                       <label htmlFor="state">State</label>
                     </div>
 
-                    <div className="input-field col s2">
+                    <div className="input-field col s3">
                       <input className="validate"
                        type="text"
                       name="zip"
@@ -184,7 +184,7 @@ class Signup extends Component {
                       <label htmlFor="state">Zip</label>                     
                     </div>
 
-                    <div className="input-field col s2">
+                    <div className="input-field col s3">
                       <input className="validate"
                        type="text"
                       name="country"
