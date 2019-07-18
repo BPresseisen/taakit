@@ -90,6 +90,11 @@ class Navbar extends Component {
                     <li>
                     <a href="/!" className="navText" onClick={this.logout}>Logout</a>
                 </li>
+                <li> 
+                    <a href="/tasks" className="navText">
+                        Shift
+                    </a>
+                  </li>
             </ul>
         </header>
         );
