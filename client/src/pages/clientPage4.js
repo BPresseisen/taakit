@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import "materialize-css/dist/css/materialize.min.css";
-import { ClientProfile, ShiftStartButton } from '../components/Clients';
-import { ShiftChip, ShiftChip2, ShiftChip4, ShiftChip9 } from '../components/Shift';
+import { ClientProfile4, ShiftStartButton } from '../components/Clients';
+import { ShiftChip8, ShiftChip10 } from '../components/Shift';
 import { Med } from '../components/Grid';
 import M from "materialize-css/dist/js/materialize.min.js";
 
@@ -21,7 +21,7 @@ class ClientPage extends Component {
                         </div>
                     </div>
                 <Med>
-                    <ClientProfile/>
+                    <ClientProfile4/>
                 </Med>
                 <Med>
                     <ShiftStartButton/>
@@ -29,7 +29,7 @@ class ClientPage extends Component {
                 <Med>
                     <h5>Previous Shifts</h5>
                     {/* For loop */}
-                    <ShiftChip/><ShiftChip2/><ShiftChip4/><ShiftChip9/>
+                    <ShiftChip8/><ShiftChip10/>
                 </Med>
             </Fragment>
         )
