@@ -6,6 +6,8 @@ Taakit.com is an At-home Aide Care platform to manage, monitor and provide a fra
 ## Deployment
 
 Git clone the files to a local directory of your choice. Make sure to run the npm installations!
+  
+www.taakit.com
 
 ## Built With
 
