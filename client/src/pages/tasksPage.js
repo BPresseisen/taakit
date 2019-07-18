@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Med } from '../components/Grid';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
+import { ShiftCard } from  '../components/Shift'
 import { 
     TaskContainer, 
     Feeding,
@@ -15,9 +16,8 @@ import {
     Transportation,
     Shopping,
     MediaTech,
-    Housekeeping, 
-    ShiftCard
-} from "../components/Tasks";
+    Housekeeping
+} from '../components/Tasks';
 
 
 
@@ -34,6 +34,11 @@ class TasksPage extends Component {
         return (
            
            <Fragment>
+               <div className="row">
+                        <div className="col s12  center formTitle">
+                            Log Tasks
+                        </div>
+                    </div>
                <Med>
                <ShiftCard/>
                </Med>

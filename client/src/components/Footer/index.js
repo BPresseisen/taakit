@@ -16,11 +16,6 @@ export function Footer(props) {
                 <div className="col l4 offset-l2 s12">
                   <h5 className="white-text">Site Map</h5>
                   <ul>
-                  <li>
-                      <Link to="/dashboard">
-                      <div className="grey-text text-lighten-3">Dashboard</div>
-                      </Link>
-                      </li>
                       <li>
                       <Link to="/">
                       <div className="grey-text text-lighten-3">Login</div>
@@ -29,6 +24,11 @@ export function Footer(props) {
                       <li>
                       <Link to="/signup">
                       <div className="grey-text text-lighten-3">Signup</div>
+                      </Link>
+                      </li>
+                      <li>
+                      <Link to="/dashboard">
+                      <div className="grey-text text-lighten-3">Dashboard</div>
                       </Link>
                       </li>
                       <li>
@@ -42,13 +42,13 @@ export function Footer(props) {
                       </Link>
                       </li>
                     <li>
-                      <Link to="/about">
-                      <div className="grey-text text-lighten-3">About</div>
+                    <Link to="/contact">
+                      <div className="grey-text text-lighten-3">Contact Us</div>
                       </Link>
                       </li>
-                    <li>
-                    <Link to="/contact">
-                      <div className="grey-text text-lighten-3">Contact</div>
+                      <li>
+                    <Link to="/contact#about">
+                      <div className="grey-text text-lighten-3">About</div>
                       </Link>
                       </li>
                       

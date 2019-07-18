@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #555555;
 }
 
 code {
@@ -40,10 +42,17 @@ main {
   font-style:normal;font-weight:400;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+    color: #555555;
+  }
+  .taakit {
+    font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
+  }    
+
   .brand-logo {
     font-family: 'proxima-nova-black', Arial, Helvetica, sans-serif;
     font-size: 50px !important;
-    margin-left: 25px;
   }         
 #signupForm, #profileForm, #signinForm, #roleForm {
   justify-content: center;
@@ -72,6 +81,11 @@ main {
 
 a:hover {
   color: ffffff; 
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 990px) {

@@ -14,6 +14,11 @@ class ClientPage extends Component {
     render() {
         return (
             <Fragment>
+                <div className="row">
+                        <div className="col s12  center formTitle">
+                            Client Page
+                        </div>
+                    </div>
                 <Med>
                     <ClientProfile/>
                 </Med>
@@ -21,7 +26,7 @@ class ClientPage extends Component {
                     <ShiftStartButton/>
                 </Med>
                 <Med>
-                    <h3>Previous Shifts</h3>
+                    <h5>Previous Shifts</h5>
                     {/* For loop */}
                     <ShiftChip/>
                 </Med>
