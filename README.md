@@ -1,3 +1,29 @@
+# Taakit.com
+  
+Taakit.com is an At-home Aide Care platform to manage, monitor and provide a framework for seniors in their active daily life
+  
+
+## Deployment
+
+Git clone the files to a local directory of your choice. Make sure to run the npm installations!
+  
+www.taakit.com
+
+## Built With
+
+* [reactjs](https://reactjs.org/) 
+* [node.js](https://nodejs.org/en/) 
+* [MongoDB](https://www.mongodb.com/) - database
+* [Passport](https://www.npmjs.com/package/passport) - login authentication
+* [Materialize](hhttps://www.npmjs.com/package/materialize-css) - css styling library
+* [axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js
+  
+## Authors
+
+* **Ben Presseisen** - *Initial work* - [Precise Insights](https://bpresseisen.github.io/Bootstrap-Portfolio/)
+* **Sean Munley** - *Initial work* - (https://github.com/seanmun/Bootstrap-Portfolio/)
+
+  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

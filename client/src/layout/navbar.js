@@ -60,7 +60,7 @@ class Navbar extends Component {
     }
 
     render() {
-        
+      
         return (
         <header>
             <div className="navbar-fixed ">

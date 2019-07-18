@@ -29,7 +29,13 @@ class Contact extends Component {
                 </div>
                 <div className="row">
                     <div className="col s12 center">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    We are a dynamic duo fighting for our own loved ones’ ability to live independently and with dignity in their own homes.
+                    Our common, shared experiences with the care of senior family members inspired us to create this much needed solution.
+                    We collaborate and work together on everything in the platform design, development and deployment. 
+                    <br></br>
+                    <br></br>
+                    We love our work on Taakit because we love the people whose life quality and security have been helped by it.
+                    <br></br>And our mission to improve those lives every day means Taakit continually improves to be relied upon by those who need it and matter most.
                     </div>
                 </div>
                 <div className="row">
