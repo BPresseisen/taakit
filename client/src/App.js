@@ -60,6 +60,7 @@ class App extends Component {
   }
 
   render() {
+  
     return (
       <Fragment>
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />

@@ -12,7 +12,7 @@ class Contact extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col s12 center formTitle">
+                    <div className="col s12 center brand-logo">
                         Our Team
                     </div>
                 </div>
@@ -21,30 +21,31 @@ class Contact extends Component {
                <BenP/>
                 <SeanM/>
                </div>
-               <div className="row" id="about" name="about">
-                    <div className="col s12 center formTitle">
+
+               <div className="row">
+                    <div className="col s12 center brand-logo">
                         Our Story
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12 m10 offset-m1 align-left">
-
-                    Welcome to <span className="taakit">Taakit</span>, a solution for the future of in home assisted care. <br/><br/>
-                    
-                    <b></b>Why we created <span className="taakit">Taakit</span>?
-                    <br/><br/>
-                     There are approximately 80MM baby boomers (born between 1946 and 1965). As these boomers age, many will require aided care to live their lives as independently as possible and to live with the dignity of remaining in their own home. Taking care of loved ones who need aided care is difficult in and of itself. With <span className="taakit">Taakit</span> those who are tasked with such responsibilities can benefit from a platform that maps and manages everything which needs doing and monitoring.
-                     <br/><br/>
-                    Loved ones receive the care they need and in real-time these tasks are planned, charted, and communicated as they are delivered.
-                    <br/><br/>
-                    Real time data in the cloud empowers, enables and educates a multitude of people who may fulfill the caregiving role whether they are an at-home aide, nurse practitioner or from among concerned family and friends. 
-                    <br/><br/>
-                    The <span className="taakit">Taakit</span> platform is mobile friendly and reduces waste, miscommunications, burdensome duplicate and triplicate paperwork and the manual errors that underlie existing systems, inefficiencies and procedures used by caregivers.
+                    <div className="col s12 center">
+                    We are a dynamic duo fighting for our own loved ones’ ability to live independently and with dignity in their own homes.
+                    Our common, shared experiences with the care of senior family members inspired us to create this much needed solution.
+                    We collaborate and work together on everything in the platform design, development and deployment. 
+                    <br></br>
+                    <br></br>
+                    We love our work on Taakit because we love the people whose life quality and security have been helped by it.
+                    <br></br>And our mission to improve those lives every day means Taakit continually improves to be relied upon by those who need it and matter most.
                     </div>
                 </div>
-                
+                <div className="row">
+                    <div className="col s12 center">
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
             </div>
         )
     }
 }
-export default Contact;
+export default Contact
