@@ -26,37 +26,6 @@ export function ClientProfile(props) {
     )
 }
 
-export function ClientProfile2(props) {
-  return (
-      <div className="collection ">
-      <a href="#!" className="collection-item active teal"> {patient.Betty.fullName}</a>
-      <a href="https://google.com/maps/place/{patient.Gene.address}" target="_blank" rel="noopener noreferrer" className="collection-item teal-text"> {patient.Betty.address}</a>
-      <a href="mailto:{patient.Gene.email}" className="collection-item teal-text"> {patient.Betty.email}</a>
-      <a href="tel:{patient.Gene.phone}" className="collection-item teal-text"> {patient.Betty.phone}</a>
-    </div>
-  )
-}
-export function ClientProfile3(props) {
-  return (
-      <div className="collection ">
-      <a href="#!" className="collection-item active teal"> {patient.Al.fullName}</a>
-      <a href="https://google.com/maps/place/{patient.Gene.address}" target="_blank" rel="noopener noreferrer" className="collection-item teal-text"> {patient.Al.address}</a>
-      <a href="mailto:{patient.Gene.email}" className="collection-item teal-text"> {patient.Al.email}</a>
-      <a href="tel:{patient.Gene.phone}" className="collection-item teal-text"> {patient.Al.phone}</a>
-    </div>
-  )
-}
-export function ClientProfile4(props) {
-  return (
-      <div className="collection ">
-      <a href="#!" className="collection-item active teal"> {patient.Gail.fullName}</a>
-      <a href="https://google.com/maps/place/{patient.Gene.address}" target="_blank" rel="noopener noreferrer" className="collection-item teal-text"> {patient.Gail.address}</a>
-      <a href="mailto:{patient.Gene.email}" className="collection-item teal-text"> {patient.Gail.email}</a>
-      <a href="tel:{patient.Gene.phone}" className="collection-item teal-text"> {patient.Gail.phone}</a>
-    </div>
-  )
-}
-
 
 export function ShiftStartButton(props) {
   return (
@@ -93,42 +62,4 @@ export function ClientChip(props) {
   )
 }
 
-export function ClientChip2(props) {
- 
-  return (
-      <Link to="/client2">
-       <div className="chip teal white-text ">
-           <i className="tiny material-icons">folder_shared</i> &nbsp;
-         {patient.Betty.fullName}
-           <i className="close material-icons">add_circle_outline</i>
-      </div>
-      </Link>
-     
-  )
-}
-export function ClientChip3(props) {
- 
-  return (
-      <Link to="/client3">
-       <div className="chip teal white-text ">
-           <i className="tiny material-icons">folder_shared</i> &nbsp;
-         {patient.Al.fullName}
-           <i className="close material-icons">add_circle_outline</i>
-      </div>
-      </Link>
-     
-  )
-}
-export function ClientChip4(props) {
- 
-  return (
-      <Link to="/client4">
-       <div className="chip teal white-text ">
-           <i className="tiny material-icons">folder_shared</i> &nbsp;
-         {patient.Gail.fullName}
-           <i className="close material-icons">add_circle_outline</i>
-      </div>
-      </Link>
-     
-  )
-}
+
