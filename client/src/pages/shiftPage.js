@@ -1,12 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { TaskContainer } from '../components/Tasks';
-import { SubmittedTasks, 
-    SubmittedTasks2, 
-    SubmittedTasks4, 
-    SubmittedTasks5, 
-    SubmittedTasks6, 
-    SubmittedTasks7, 
-    ShiftCard } from '../components/Shift';
+import { SubmittedTasks, ShiftCard } from '../components/Shift';
 import { Med } from '../components/Grid';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -36,13 +30,7 @@ class ShiftPage extends Component {
                 <TaskContainer>
                     {/* For loop */}
                     <SubmittedTasks/>
-                    <SubmittedTasks2/>
-                    <SubmittedTasks4/>
-                    <SubmittedTasks5/>
-                    <SubmittedTasks7/>
-                    <SubmittedTasks6/>
                     <SubmittedTasks/>
-                    <SubmittedTasks2/>
                 </TaskContainer>
             </Med>
             </Fragment>

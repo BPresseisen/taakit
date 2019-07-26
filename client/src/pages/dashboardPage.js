@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { ClientChip, ClientChip2, ClientChip3, ClientChip4 } from '../components/Clients';
-import { ShiftChip, ShiftChip2, ShiftChip3, ShiftChip4, ShiftChip9 } from '../components/Shift';
+import { ClientChip } from '../components/Clients';
+import { ShiftChip } from '../components/Shift';
 import "materialize-css/dist/css/materialize.min.css";
 import LoggedIn from '../layout/loggedIn';
 
@@ -26,9 +26,6 @@ class DashboardPage extends Component {
                                 <h5>Your Clients </h5>
                                 <br/>
                                 <ClientChip/>
-                                <ClientChip2/>
-                                <ClientChip3/>
-                                <ClientChip4/>
                                 <br/> 
                                 <br/>
                             </div>
@@ -39,7 +36,7 @@ class DashboardPage extends Component {
                         <h5>Recent Shifts</h5>
                             <br/>
                             <div>
-                            <ShiftChip/><ShiftChip2/><ShiftChip3/><ShiftChip4/><ShiftChip9/>
+                            <ShiftChip/>
                             <br/>
                             <br/>
                             </div>

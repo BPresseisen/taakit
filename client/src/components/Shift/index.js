@@ -13,10 +13,7 @@ var shift = {
     s08: {fullName: "Gail Lefebre", clientID: "C00004", userID: "Sean Munley", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
     s09: {fullName: "Gene Grogan", clientID: "C00001", userID: "Sean Munley", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"},
     s10: {fullName: "Gail Lefebre", clientID: "C00004", userID: "Sean Munley", startTime: "07/11/2019 08:00:00", endTime: "07/11/2019 18:00:00"}
-
 }
-
-
 
 var task = {
     t00001: {
@@ -67,7 +64,6 @@ var task = {
         taskTypeID: "Laundry",
         score: "All laundry must be done by others"
     }
-   
   };
 
   export function ShiftChip(props) {
@@ -82,114 +78,7 @@ var task = {
        
     )
   }
-  export function ShiftChip2(props) {
-    return (
-          <Link to="shift2">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s02.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip3(props) {
-    return (
-          <Link to="shift3">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s03.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip4(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s04.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip5(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s05.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip6(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s06.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip7(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s07.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip8(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s08.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip9(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s09.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
-  export function ShiftChip10(props) {
-    return (
-          <Link to="shift4">
-         <div className="chip grey darken-2 white-text">
-         <i className="tiny material-icons">assignment_ind</i>
-           &nbsp;&nbsp;{shift.s10.endTime}
-             <i className="close material-icons">add_circle_outline</i>
-        </div>
-        </Link>
-       
-    )
-  }
+  
 
   export function ShiftCard(props) {
     return (
@@ -201,195 +90,6 @@ var task = {
                         <p>Careperson: {shift.s01.userID}</p>
                         <p>Client: {shift.s01.fullName}</p>
                         <p>Date: {shift.s01.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard2(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s02</span>
-                        <p>Careperson: {shift.s02.userID}</p>
-                        <p>Client: {shift.s02.fullName}</p>
-                        <p>Date: {shift.s02.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard3(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s03</span>
-                        <p>Careperson: {shift.s03.userID}</p>
-                        <p>Client: {shift.s03.fullName}</p>
-                        <p>Date: {shift.s03.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard4(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s04.userID}</p>
-                        <p>Client: {shift.s04.fullName}</p>
-                        <p>Date: {shift.s04.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard5(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s05.userID}</p>
-                        <p>Client: {shift.s05.fullName}</p>
-                        <p>Date: {shift.s05.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard6(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s06.userID}</p>
-                        <p>Client: {shift.s06.fullName}</p>
-                        <p>Date: {shift.s06.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard7(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s07.userID}</p>
-                        <p>Client: {shift.s07.fullName}</p>
-                        <p>Date: {shift.s07.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard8(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s08.userID}</p>
-                        <p>Client: {shift.s08.fullName}</p>
-                        <p>Date: {shift.s08.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard9(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s09.userID}</p>
-                        <p>Client: {shift.s09.fullName}</p>
-                        <p>Date: {shift.s09.endTime}</p>
-                        </div>
-                        <div className="card-action">
-                        <Link to="/client" className="white-text">Client Details &raquo;</Link>
-                        <a href="/dashboard" className="waves-effect waves-light btn grey lighten-2 black-text"><i className="material-icons right">done</i>End Shift</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   );
-}
-
-export function ShiftCard10(props) {
-    return (
-        <div className="row">
-            <div className="col s12">
-                <div className="card grey darken-2">
-                    <div className="card-content white-text">
-                        <span className="card-title">Shift ID: s04</span>
-                        <p>Careperson: {shift.s10.userID}</p>
-                        <p>Client: {shift.s10.fullName}</p>
-                        <p>Date: {shift.s10.endTime}</p>
                         </div>
                         <div className="card-action">
                         <Link to="/client" className="white-text">Client Details &raquo;</Link>
@@ -438,148 +138,17 @@ export function SubmittedTaskExpand(props) {
                 </div>
             </div>
             <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00001.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00001.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
-
-export function SubmittedTaskExpand2(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00002.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00002.taskID}<br/>
-                </div>
+                <ul>
+                    <li><span className="teal-text">Score:</span>  {task.t00001.score}</li>
+                    <li><span className="teal-text">Time Logged:</span>  {task.t00001.timeStamp}</li>
+                </ul>
             </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00002.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00002.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
-
-export function SubmittedTaskExpand3(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00003.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00003.taskID}<br/>
-                </div>
-            </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00003.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00003.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
-
-export function SubmittedTaskExpand4(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00004.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00004.taskID}<br/>
-                </div>
-            </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00004.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00004.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
-
-export function SubmittedTaskExpand5(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00005.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00005.taskID}<br/>
-                </div>
-            </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00005.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00005.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
-
-export function SubmittedTaskExpand6(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00006.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00006.taskID}<br/>
-                </div>
-            </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00006.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00006.timeStamp}</li>
-                    </ul>
-                
-        </div>
         </Fragment>
     );
 }
 
 
-export function SubmittedTaskExpand7(props) {
-    return (
-        <Fragment>
-        <div className="collapsible-header task-title teal-text">
-            <div>
-            <ArchiveIcon/> {task.t00007.taskTypeID}
-                </div>
-                <div className="task-id">
-                    Task ID: {task.t00007.taskID}<br/>
-                </div>
-            </div>
-            <div className="collapsible-body">
-                    <ul>
-                        <li><span className="teal-text">Score:</span>  {task.t00007.score}</li>
-                        <li><span className="teal-text">Time Logged:</span>  {task.t00007.timeStamp}</li>
-                    </ul>
-                
-        </div>
-        </Fragment>
-    );
-}
+
 
 
 
@@ -587,54 +156,6 @@ export function SubmittedTasks() {
     return (
         <Li>
         <SubmittedTaskExpand/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks2() {
-    return (
-        <Li>
-        <SubmittedTaskExpand2/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks3() {
-    return (
-        <Li>
-        <SubmittedTaskExpand3/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks4() {
-    return (
-        <Li>
-        <SubmittedTaskExpand4/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks5() {
-    return (
-        <Li>
-        <SubmittedTaskExpand5/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks6() {
-    return (
-        <Li>
-        <SubmittedTaskExpand6/>
-        </Li>
-    );
-}
-
-export function SubmittedTasks7() {
-    return (
-        <Li>
-        <SubmittedTaskExpand7/>
         </Li>
     );
 }
