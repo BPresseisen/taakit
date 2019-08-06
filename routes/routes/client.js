@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const Client = require('../../models/models/client')
+const Client = require('../../database/models/client')
 
 router.post('/client', (req, res) => {
     console.log('client signup');

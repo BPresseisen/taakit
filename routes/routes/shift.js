@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const Shift = require('../../models/models/shift')
+const Shift = require('../../database/models/shift')
 
 app.post("/tasks", function(req, res) {
     // Create a new user using req.body
