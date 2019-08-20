@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
-    
-import axios from 'axios'
+import axios from 'axios';
 
+// const mongoose = require('mongoose');
+// const connection = mongoose.createConnection('mongodb://localhost:27017/simple-mern-passport');
+// const Client = connection.model('client');
 
 class Signup extends Component {
+
   constructor() {
 		super()
 		this.state = {
@@ -21,6 +24,7 @@ class Signup extends Component {
       state: '',
       zip: '',
       country: '',
+      clientName: "",
       clientID: '',
       redirectTo: false
 		}
@@ -44,8 +48,25 @@ class Signup extends Component {
     console.log(this.state.state);
     console.log(this.state.zip);
     console.log(this.state.country);
+    console.log(this.state.clientName);
     console.log(this.state.clientID);
 		event.preventDefault()
+
+    // axios.post('/client/',{
+      
+    //   clientName: this.state.clientName
+
+    //   }).then(response=>{
+    //     console.log(response)
+    //     if (!response.data.errmsg) {
+    //       console.log('successful client entry')
+    //       Client.find({user_ID}).where('fullname').clientName
+    //     }
+
+      
+
+
+
 
 		//request to server to add a new username/password
 		axios.post('/user/', {
@@ -60,6 +81,7 @@ class Signup extends Component {
       state: this.state.state,
       zip: this.state.zip,
       country:this.state.country,
+      clientName: this.state.clientName,
       clientID: this.state.clientID
 		})
 			.then(response => {
@@ -200,6 +222,15 @@ class Signup extends Component {
                       value={this.state.mobile}
                       onChange={this.handleChange}/>
                       <label htmlFor="mobile">Mobile Phone</label>
+                    </div> 
+
+                    <div className="input-field col s6">
+                      <input className="validate"
+                      type="text"
+                      name="clientName"
+                      value={this.state.clientName}
+                      onChange={this.handleChange}/>
+                      <label htmlFor="clientName">Client Name</label>
                     </div>       
                   </div>
                   

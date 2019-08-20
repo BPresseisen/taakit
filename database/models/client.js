@@ -5,16 +5,17 @@ mongoose.promise = Promise
 // Define userSchema
 const clientSchema = new Schema({
 
-	firstname: { type: String, unique: false, required: true},
-	lastname: {type: String, unique: false, required: true},
-	email: {type: String, unique: true, required: true},
-	mobile: {type: String, unique: true, required: true},
-    address: {type: String, unique: false, required},
-    city: {type: String, unique: false, required},
-    state: {type: String, unique: false, required},
-    zip: {type: Number, unique: false, required},
-    country: {type: String, unique: false, required},
-    userID: {type:Number, unique: false, required: true},
+	firstname: { type: String, unique: false, required: false},
+    lastname: {type: String, unique: false, required: false},
+    fullname: {type: String, unique: false, required: true},
+	email: {type: String, unique: true, required: false},
+	mobile: {type: String, unique: true, required: false},
+    address: {type: String, unique: false, required: false},
+    city: {type: String, unique: false, required: false},
+    state: {type: String, unique: false, required:false},
+    zip: {type: Number, unique: false, required: false},
+    country: {type: String, unique: false, required: false},
+    userID: {type:Number, unique: false, required: false},
     // jointW: {type: Number, required: true}
 	// muscW: {type: Number, required: true},
 	// nPainW: {type: Number, required: true},

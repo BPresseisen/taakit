@@ -8,15 +8,16 @@ const userSchema = new Schema({
 
 	username: { type: String, unique: true, required: true },
 	password: { type: String, unique: false, required: true },
-	firstname: {type: String, unique: false, required:true},
-	lastname: {type: String, unique: false, required:true},
+	firstname: {type: String, unique: false, required:false},
+	lastname: {type: String, unique: false, required:false},
 	role: {type: String, unique: false, required:true}, 
-	mobile: {type: String, unique: true, required:true},
-	address: {type: String, unique: false, required:true},
-	city: {type: String, unique: false, required:true},
-	state: {type: String, unique: false, required:true},
-	zip: {type: String, unique: false, required:true},
-	country: {type: String, unique:false,required:true},
+	mobile: {type: String, unique: true, required:false},
+	address: {type: String, unique: false, required:false},
+	city: {type: String, unique: false, required:false},
+	state: {type: String, unique: false, required:false},
+	zip: {type: String, unique: false, required:false},
+	country: {type: String, unique:false,required:false},
+	clientName: {type: String, unique:false,required:false},
 	clientID: {type: Array, unique: false, required: false}
 
 })
